@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PNP", "PNP\PNP.csproj", "{8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WOOLWORTH", "WOOLWORTH\WOOLWORTH.csproj", "{20664C04-C839-407F-BA50-73AE54E35257}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHECKERS", "CHECKERS\CHECKERS.csproj", "{DD6E577D-467C-4FF9-B886-58463062DC25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPAR", "SPAR\SPAR.csproj", "{7316C479-D45B-4782-94AA-F576FB591B7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{20664C04-C839-407F-BA50-73AE54E35257}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20664C04-C839-407F-BA50-73AE54E35257}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20664C04-C839-407F-BA50-73AE54E35257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD6E577D-467C-4FF9-B886-58463062DC25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD6E577D-467C-4FF9-B886-58463062DC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD6E577D-467C-4FF9-B886-58463062DC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD6E577D-467C-4FF9-B886-58463062DC25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7316C479-D45B-4782-94AA-F576FB591B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7316C479-D45B-4782-94AA-F576FB591B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7316C479-D45B-4782-94AA-F576FB591B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7316C479-D45B-4782-94AA-F576FB591B7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
