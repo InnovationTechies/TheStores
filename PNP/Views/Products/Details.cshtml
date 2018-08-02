@@ -1,0 +1,58 @@
+﻿@model PNP.Models.Products
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Products</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.productName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productDropPercent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productDropPercent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productDateEndPromo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productDateEndPromo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.productID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
