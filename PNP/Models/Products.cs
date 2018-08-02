@@ -16,6 +16,7 @@ namespace PNP.Models
         public string productDesc { get; set; }
         public DateTime productDateEndPromo { get; set; }
         public IEnumerable<ProductCatagory> productCatagories { get; set; }
+        
 
 
     }
