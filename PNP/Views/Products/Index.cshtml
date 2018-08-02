@@ -4,12 +4,72 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Sales</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-9">
+
+            <div class="row">
+                @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img class="card-img-top" src="@Url.Content(item.productImage)" alt="Product Image" height="60%" width="60%" />
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">@Html.DisplayFor(modelItem => item.productName)</a>
+
+                            </h4>
+                            <h5>$24.99</h5>
+                            <p class="card-text">
+                                @Html.DisplayFor(modelItem => item.productDesc)
+                                <br />
+                                @Html.DisplayFor(modelItem => item.productDateEndPromo)
+                                <br />
+                                @Html.DisplayFor(modelItem => item.productCatagories)
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">★ ★ ★ ★ ☆</small>
+                        </div>
+
+                    </div>
+
+                    @Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.productID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.productID })
+                </div>
+
+        }
+
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.col-lg-9 -->
+        <div class="col-lg-3">
+            <h1 class="my-4">PNP</h1>
+            <div class="list-group">
+                <a class="list-group-item" href="#">Grocaries</a>
+                <a class="list-group-item" href="#">Pantry</a>
+                <a class="list-group-item" href="#">Baby </a>
+            </div>
+        </div>
+        <!-- /.col-lg-3 -->
+    </div>
+    <!-- /.row -->
+</div>
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.productName)
@@ -47,11 +107,10 @@
             @Html.DisplayFor(modelItem => item.productDateEndPromo)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.productID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.productID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.productID })
+            
         </td>
     </tr>
 }
 
-</table>
+</table>*@
+    
