@@ -1,0 +1,58 @@
+﻿@model IEnumerable<WOOLWORTH.Models.WoolworthProducts>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<p>
+    @Html.ActionLink("MANAGER", "Create")
+</p>
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <h1 0.class="my-4">catergories</h1>
+
+            <div class="list-group">
+                <a href="#" class="list-group-item">Woman</a>
+                <a href="#" class="list-group-item">Men</a>
+                <a href="#" class="list-group-item">Kids</a>
+                <a href="#" class="list-group-item">Babies</a>
+            </div>
+        </div>
+    </div>
+    </div>
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="~/img/men.jpg" alt=""></a>
+                        
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">Stripe Print Cotton Rugby Golf Shirt!</a>
+                            </h4>
+                            <h5>R 330.00</h5>
+                            <p class="card-text">Stripe Print Cotton Rugby Golf ShirtRugby inspired, this sporty cotton golfer is exceptionally soft to the touch, and features bold blue and white stripes for a casual style that stands strongly on it's own.!</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
+                </div>
+                }
+        
+
+
+
+
+
+
+    @*@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.productID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.productID })*@
+
+
+
+

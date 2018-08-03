@@ -46,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -143,9 +149,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CHECKERSContext.cs" />
+    <Compile Include="Models\ProductCategory.cs" />
+    <Compile Include="Models\Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +163,59 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\images\33830T-Live-better-Wellness-50-card-OPT1.jpg" />
+    <Content Include="fonts\images\Avos-in-season-505x315 - Copy.jpg" />
+    <Content Include="fonts\images\Avos-in-season-505x315.jpg" />
+    <Content Include="fonts\images\Avos-in.jpg" />
+    <Content Include="fonts\images\back.jfif" />
+    <Content Include="fonts\images\background - Copy.jfif" />
+    <Content Include="fonts\images\background.jfif" />
+    <Content Include="fonts\images\bread - Copy.jfif" />
+    <Content Include="fonts\images\bread.jfif" />
+    <Content Include="fonts\images\championship-wors-n - Copy.jpg" />
+    <Content Include="fonts\images\championship-wors-n.jpg" />
+    <Content Include="fonts\images\check - Copy.jfif" />
+    <Content Include="fonts\images\check.jfif" />
+    <Content Include="fonts\images\Checkers - Copy.jpg" />
+    <Content Include="fonts\images\Checkers.jpg" />
+    <Content Include="fonts\images\checkers1 - Copy %282%29 - Copy.jpg" />
+    <Content Include="fonts\images\checkers1 - Copy %282%29.jpg" />
+    <Content Include="fonts\images\checkers1 - Copy - Copy - Copy.jpg" />
+    <Content Include="fonts\images\checkers1 - Copy - Copy.jpg" />
+    <Content Include="fonts\images\checkers1 - Copy.jpg" />
+    <Content Include="fonts\images\checkers1.jpg" />
+    <Content Include="fonts\images\cheesyonionbread_hy08.jpg" />
+    <Content Include="fonts\images\download %281%29 - Copy.jfif" />
+    <Content Include="fonts\images\download %281%29.jfif" />
+    <Content Include="fonts\images\download 12 - Copy.png" />
+    <Content Include="fonts\images\download 12.png" />
+    <Content Include="fonts\images\download.jfif" />
+    <Content Include="fonts\images\download.png" />
+    <Content Include="fonts\images\e_compass - Copy.JPG" />
+    <Content Include="fonts\images\fruit - Copy.jpg" />
+    <Content Include="fonts\images\fruit.jpg" />
+    <Content Include="fonts\images\ground.jfif" />
+    <Content Include="fonts\images\Header - Copy.jpg" />
+    <Content Include="fonts\images\Header.jpg" />
+    <Content Include="fonts\images\images - Copy - Copy.jfif" />
+    <Content Include="fonts\images\images - Copy.jfif" />
+    <Content Include="fonts\images\images.jfif" />
+    <Content Include="fonts\images\Italian_ImageCard_505x315.jpg" />
+    <Content Include="fonts\images\milk - Copy - Copy.jfif" />
+    <Content Include="fonts\images\milk - Copy.jfif" />
+    <Content Include="fonts\images\milk.jfif" />
+    <Content Include="fonts\images\mvhomepage2 - Copy - Copy.jpg" />
+    <Content Include="fonts\images\mvhomepage2 - Copy.jpg" />
+    <Content Include="fonts\images\mvhomepage2.jpg" />
+    <Content Include="fonts\images\salad.jfif" />
+    <Content Include="fonts\images\shop - Copy %282%29.jpg" />
+    <Content Include="fonts\images\shop - Copy - Copy.jpg" />
+    <Content Include="fonts\images\shop - Copy.jpg" />
+    <Content Include="fonts\images\shop.jpg" />
+    <Content Include="fonts\images\steakhouse-n - Copy.jpg" />
+    <Content Include="fonts\images\steakhouse-n.jpg" />
+    <Content Include="fonts\images\wine.jfif" />
+    <Content Include="fonts\images\wines.jfif" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -185,10 +248,14 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Products\Create.cshtml" />
+    <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\Products\Details.cshtml" />
+    <Content Include="Views\Products\Edit.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
