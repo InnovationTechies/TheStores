@@ -11,11 +11,11 @@
 </p>
 
 
-<div class="container">
+<div class="container" >
     <div class="row">
-        <div class="col-lg-3">
-            <h1 class="my-4">Categories</h1>
-            <div class="list-group">
+        <div class="col-lg-3" >
+            @*<h1 class="my-4">Categories</h1>*@
+            <div class="list-group" >
                 <a href="#" class="list-group-item">Bakery</a>
                 <a href="#" class="list-group-item">Drinks</a>
                 <a href="#" class="list-group-item">Butchery</a>
@@ -24,7 +24,7 @@
         </div>
         <!-- /.col-lg-3 -->
 
-        <div class="col-lg-9">
+        @*<div class="col-lg-9">
 
             <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -55,14 +55,14 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
+                </div>*@
                 <!-- /.col-lg-9 -->
 
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             <a href="#">
-                                <img class="card-img-top" src="~/Images/download(3).jfif" alt="">
+                                <img class="card-img-top" src="~/Images/download (3).jfif" alt="">
                             </a>
                             <div class="card-body">
                                 <h4 class="card-title">
@@ -80,7 +80,7 @@
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             <a href="#">
-                                <img class="card-img-top" src="~/Images/images(10).jfif" alt="">
+                                <img class="card-img-top" src="~/Images/images (10).jfif" alt="">
                             </a>
                             <div class="card-body">
                                 <h4 class="card-title">
@@ -97,7 +97,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="~/Images/images(11).jfif" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="~/Images/images (11).jfif" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Sasko Flour</a>
@@ -129,7 +129,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="~/Images/images(12).jfif" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="~/Images/images (12).jfif" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Budweirs</a>
@@ -145,7 +145,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="~/Images/images(12).jfif" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="~/Images/images (13).jfif" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Black Forest Cake</a>
@@ -168,49 +168,50 @@
 </div>
 <!-- /.container -->
 
-@*<table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.productName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.productImage)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.productDropPercent)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.productDescription)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.productDateEndPromo)
-            </th>
-            <th></th>
-        </tr>
 
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.productName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.productImage)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.productDropPercent)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.productDescription)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.productDateEndPromo)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.productID }) |
-                @Html.ActionLink("Details", "Details", new { id=item.productID }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.productID })
-            </td>
-        </tr>
-    }
+        @*<table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.productName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.productImage)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.productDropPercent)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.productDescription)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.productDateEndPromo)
+                    </th>
+                    <th></th>
+                </tr>
 
-    </table>*@
+            @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.productName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.productImage)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.productDropPercent)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.productDescription)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.productDateEndPromo)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id=item.productID }) |
+                        @Html.ActionLink("Details", "Details", new { id=item.productID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.productID })
+                    </td>
+                </tr>
+            }
+
+            </table>*@
