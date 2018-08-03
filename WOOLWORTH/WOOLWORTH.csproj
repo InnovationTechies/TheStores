@@ -165,6 +165,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\1st.jfif" />
+    <Content Include="img\2nd men.jfif" />
+    <Content Include="img\3rd.jfif" />
+    <Content Include="img\backgroup slider1.jfif" />
+    <Content Include="img\boy kids.jpg" />
+    <Content Include="img\kid_girls.jpg" />
+    <Content Include="img\logo.jfif" />
+    <Content Include="img\men.jpg" />
+    <Content Include="img\slider2.jpg" />
+    <Content Include="img\slider3.jpg" />
+    <Content Include="img\woman.jpg" />
+    <Content Include="img\woolwor=name.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
