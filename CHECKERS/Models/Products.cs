@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -14,6 +15,6 @@ namespace CHECKERS.Models
         public double productDropPercent { get; set; }
         public string productDesc { get; set; }
         public DateTime productDateEndPromo { get; set; }
-        public IEnumerable<ProductCatagory> productCatagories { get; set; }
+        public IEnumerable<ProductCategory> productCategory { get; set; }
     }
 }
