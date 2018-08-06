@@ -4,17 +4,17 @@
 	ViewBag.Title = "Index";
 }
 
-<h2>Sales</h2>
+@*<h2>Sales</h2>*@
 
-<p>
-	<h2>@Html.ActionLink("Create New Products", "Create")</h2>
-</p>
+@*<p>
+		<h2>@Html.ActionLink("Sales", "Create")</h2>
+	</p>*@
 <div class="container">
 
 	<div class="row">
 
 		<div class="col-lg-3">
-			<table class="table table-striped">
+			<table class="table table-responsive" align="left">
 				<tr>
 					<th>
 						<a href="#" class="table-striped">Bakery</a>
@@ -43,86 +43,41 @@
 					<th>
 						<a href="#" class="table-striped">Kiosk</a>
 					</th>
-</table>
-					
-					
-					</div>
+					<th>
+						<a href="#" class="table-striped">Gardening</a>
+					</th>
+					<th>
+						<a href="#" class="table-striped">Toiletries</a>
+					</th>
+					<th>
+						<a href="#" class="table-striped">Baby Products</a>
+					</th>
+					<th>
+						<a href="#" class="table-striped">Pets</a>
+					</th>
+					<th>
+						<a href="#" class="table-striped">Vegetables</a>
+					</th>
+					<th>
+						<a href="#" class="table-striped">Fruit</a>
+					</th>
+			</table>
+
+
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-lg-4 col-md-6 mb-4">
-			<div class="card h-100">
-				<a href="#"><img class="card-img-top" src="~/fonts/images/steakhouse-n - Copy.jpg" alt=""></a>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">Steak</a>
-					</h4>
-					<h5>R64.99</h5>
-					<p class="card-text"> 100% Organic Steak</p>
-				</div>
-				<div class="card-footer">
-
-				</div>
-			</div>
-		</div>
-
-		<div class="col-lg-4 col-md-6 mb-4">
-			<div class="card h-100">
-				<a href="#"><img class="card-img-top" src="~/fonts/images/cheesyonionbread_hy08.jpg" alt=""></a>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">Bread</a>
-					</h4>
-					<h5>R24.99</h5>
-					<p class="card-text"> Garlic Bread</p>
-				</div>
-				<div class="card-footer">
-
-				</div>
-			</div>
-		</div>
-
-		<div class="col-lg-4 col-md-6 mb-4">
-			<div class="card h-100">
-				<a href="#"><img class="card-img-top" src="~/fonts/images/championship-wors-n - Copy.jpg" alt=""></a>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">Wors</a>
-					</h4>
-					<h5>R34.99</h5>
-					<p class="card-text"> Champion Wors</p>
-				</div>
-				<div class="card-footer">
-
-				</div>
-			</div>
-		</div>
-	</div>
+</div>
+<div class="row">
 	<div class="col-lg-4 col-md-6 mb-4">
 		<div class="card h-100">
-			<a href="#"><img class="card-img-top" src="~/fonts/images/Avos-in.jpg" alt=""></a>
+			<a href="#"><img class="card-img-top" src="~/fonts/images/steakhouse-n - Copy.jpg" alt=""></a>
 			<div class="card-body">
 				<h4 class="card-title">
-					<a href="#">Avocados</a>
-				</h4>
-				<h5>R25.99</h5>
-				<p class="card-text">Fresh Avo's</p>
-			</div>
-			<div class="card-footer">
-
-			</div>
-		</div>
-	</div>
-
-	<div class="col-lg-4 col-md-6 mb-4">
-		<div class="card h-100">
-			<a href="#"><img class="card-img-top" src="~/fonts/images/wines.jfif" alt=""></a>
-			<div class="card-body">
-				<h4 class="card-title">
-					<a href="#">Wine</a>
+					<a href="#">Steak</a>
 				</h4>
 				<h5>R64.99</h5>
-				<p class="card-text"> Buy 2 get 1 free</p>
+				<h5>5% off</h5>
+				<p class="card-text"> 100% Organic Steak</p>
 			</div>
 			<div class="card-footer">
 
@@ -132,13 +87,14 @@
 
 	<div class="col-lg-4 col-md-6 mb-4">
 		<div class="card h-100">
-			<a href="#"><img class="card-img-top" src="~/fonts/images/Italian_ImageCard_505x315.jpg" alt=""></a>
-			<div class="card-body">
+			<a href="#"><img class="card-img-top" src="~/fonts/images/cheesyonionbread_hy08.jpg" alt=""></a>
+		<div class="card-body">
 				<h4 class="card-title">
-					<a href="#">Pizza</a>
+					<a href="#">Bread</a>
 				</h4>
-				<h5>R54.99</h5>
-				<p class="card-text"> Home made Pizza</p>
+				<h5>R24.99</h5>
+				<h5>5% off</h5>
+				<p class="card-text"> Garlic Bread</p>
 			</div>
 			<div class="card-footer">
 
@@ -146,51 +102,126 @@
 		</div>
 	</div>
 
-	
-		<table class="table table-striped">
+	<div class="col-lg-4 col-md-6 mb-4">
+		<div class="card h-100">
+			<a href="#"><img class="card-img-top" src="~/fonts/images/championship-wors-n - Copy.jpg" alt=""></a>
+			<div class="card-body">
+				<h4 class="card-title">
+					<a href="#">Wors</a>
+				</h4>
+				<h5>R34.99</h5>
+				<h5>5% off</h5>
+				<p class="card-text"> Champion Wors</p>
+			</div>
+			<div class="card-footer">
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+	<div class="card h-100">
+		<a href="#"><img class="card-img-top" src="~/fonts/images/Avos-in.jpg" alt=""></a>
+		<div class="card-body">
+			<h4 class="card-title">
+				<a href="#">Avocados</a>
+			</h4>
+			<h5>R25.99</h5>
+			<h5>5% off</h5>
+			<p class="card-text">Fresh Avo's</p>
+		</div>
+		<div class="card-footer">
+
+		</div>
+	</div>
+</div>
+
+<div class="col-lg-4 col-md-6 mb-4">
+	<div class="card h-100">
+		<a href="#"><img class="card-img-top" src="~/fonts/images/juice.jfif" alt=""></a>
+		<div class="card-body">
+			<h4 class="card-title">
+				<a href="#">Juice</a>
+			</h4>
+			<h5>R29.99</h5>
+			<h5>5% off</h5>
+			<p class="card-text"> 100% Orange Juice</p>
+		</div>
+		<div class="card-footer">
+
+		</div>
+	</div>
+</div>
+
+<div class="col-lg-4 col-md-6 mb-4">
+	<div class="card h-100">
+		<a href="#"><img class="card-img-top" src="~/fonts/images/Italian_ImageCard_505x315.jpg" alt=""></a>
+		<div class="card-body">
+			<h4 class="card-title">
+				<a href="#">Pizza</a>
+			</h4>
+			<h5>R54.99</h5>
+			<h5>5% off</h5>
+			<p class="card-text"> Home made Pizza</p>
+		</div>
+		<div class="card-footer">
+
+		</div>
+	</div>
+</div>
+
+
+@*<table class="table table-striped">
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.productName)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.productImage)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.productPrice)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.productDropPercent)
+			</th>
+
+			<th>
+				@Html.DisplayNameFor(model => model.productDesc)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.productDateEndPromo)
+			</th>
+			<th></th>
+		</tr>
+
+		@foreach (var item in Model)
+		{
 			<tr>
-				<th>
-					@Html.DisplayNameFor(model => model.productName)
-				</th>
-				<th>
-					@Html.DisplayNameFor(model => model.productImage)
-				</th>
-				<th>
-					@Html.DisplayNameFor(model => model.productDropPercent)
-				</th>
-				<th>
-					@Html.DisplayNameFor(model => model.productDesc)
-				</th>
-				<th>
-					@Html.DisplayNameFor(model => model.productDateEndPromo)
-				</th>
-				<th></th>
+				<td>
+					@Html.DisplayFor(modelItem => item.productName)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.productImage)
+				</td>
+	<td>
+					@Html.DisplayFor(modelItem => item.productPrice)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.productDropPercent)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.productDesc)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.productDateEndPromo)
+				</td>
+				<td>
+					@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
+					@Html.ActionLink("Details", "Details", new { id = item.productID }) |
+					@Html.ActionLink("Delete", "Delete", new { id = item.productID })
+				</td>
 			</tr>
+		}
 
-			@foreach (var item in Model)
-			{
-				<tr>
-					<td>
-						@Html.DisplayFor(modelItem => item.productName)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.productImage)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.productDropPercent)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.productDesc)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.productDateEndPromo)
-					</td>
-					<td>
-						@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
-						@Html.ActionLink("Details", "Details", new { id = item.productID }) |
-						@Html.ActionLink("Delete", "Delete", new { id = item.productID })
-					</td>
-				</tr>
-			}
-
-		</table>
+	</table>*@

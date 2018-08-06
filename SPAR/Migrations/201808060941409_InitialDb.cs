@@ -3,7 +3,7 @@ namespace SPAR.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class InitialDb : DbMigration
     {
         public override void Up()
         {
@@ -12,11 +12,11 @@ namespace SPAR.Migrations
                 c => new
                     {
                         productID = c.Int(nullable: false, identity: true),
-                        productName = c.String(),
-                        productImage = c.String(),
+                        productName = c.String(unicode: false),
+                        productImage = c.String(unicode: false),
                         productDropPercent = c.Double(nullable: false),
-                        productDescription = c.String(),
-                        productDateEndPromo = c.DateTime(nullable: false),
+                        productDescription = c.String(unicode: false),
+                        productDateEndPromo = c.DateTime(nullable: false, precision: 0),
                     })
                 .PrimaryKey(t => t.productID);
             

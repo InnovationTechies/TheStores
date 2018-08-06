@@ -10,7 +10,6 @@ namespace CHECKERS.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "CHECKERS.Models.CHECKERSContext";
         }
 
         protected override void Seed(CHECKERS.Models.CHECKERSContext context)
