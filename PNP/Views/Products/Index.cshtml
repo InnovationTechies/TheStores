@@ -5,51 +5,45 @@
 }
 
 <h2>Sales</h2>
-
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 
-
 <div class="container">
     <div class="row">
-
         <div class="col-lg-9">
-
             <div class="row">
                 @foreach (var item in Model)
-            {
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <a href="#">
-                            <img class="card-img-top" src="@Url.Content(item.productImage)" alt="Product Image" height="60%" width="60%" />
-                        </a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="#">@Html.DisplayFor(modelItem => item.productName)</a>
+                {
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#">
+                                <img class="card-img-top" src="@Url.Content(item.productImage)" alt="Product Image" height="60%" width="60%" />
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">@Html.DisplayFor(modelItem => item.productName)</a>
 
-                            </h4>
-                            <h5>$24.99</h5>
-                            <p class="card-text">
-                                @Html.DisplayFor(modelItem => item.productDesc)
-                                <br />
-                                @Html.DisplayFor(modelItem => item.productDateEndPromo)
-                                <br />
-                                @Html.DisplayFor(modelItem => item.productCatagories)
-                            </p>
+                                </h4>
+                                <h5>R28.99</h5>
+                                <p class="card-text">
+                                    @Html.DisplayFor(modelItem => item.productDesc)
+                                    <br />
+                                    @Html.DisplayFor(modelItem => item.productDateEndPromo)
+                                    <br />
+                                    @Html.DisplayFor(modelItem => item.productCatagories)
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">★ ★ ★ ★ ☆</small>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">★ ★ ★ ★ ☆</small>
-                        </div>
-
+                        @Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.productID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.productID })
                     </div>
 
-                    @Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.productID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.productID })
-                </div>
-
-        }
+                }
 
 
             </div>
@@ -69,48 +63,3 @@
     <!-- /.row -->
 </div>
 
-@*<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.productName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productImage)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productDropPercent)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productDesc)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productDateEndPromo)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.productName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productImage)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productDropPercent)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productDesc)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productDateEndPromo)
-        </td>
-        <td>
-            
-        </td>
-    </tr>
-}
-
-</table>*@
-    
