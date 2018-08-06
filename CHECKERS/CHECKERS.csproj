@@ -222,6 +222,7 @@
     <Content Include="fonts\images\images - Copy.jfif" />
     <Content Include="fonts\images\images.jfif" />
     <Content Include="fonts\images\Italian_ImageCard_505x315.jpg" />
+    <Content Include="fonts\images\juice.jfif" />
     <Content Include="fonts\images\milk - Copy - Copy.jfif" />
     <Content Include="fonts\images\milk - Copy.jfif" />
     <Content Include="fonts\images\milk.jfif" />
@@ -236,6 +237,7 @@
     <Content Include="fonts\images\steakhouse-n - Copy.jpg" />
     <Content Include="fonts\images\steakhouse-n.jpg" />
     <Content Include="fonts\images\wine.jfif" />
+    <Content Include="fonts\images\wine1.jfif" />
     <Content Include="fonts\images\wines.jfif" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
