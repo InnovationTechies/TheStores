@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Web;
 
 namespace CHECKERS.Models
 {
+    [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class CHECKERSContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
