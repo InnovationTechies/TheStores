@@ -169,6 +169,10 @@
     <Compile Include="Migrations\201808060941409_InitialDb.Designer.cs">
       <DependentUpon>201808060941409_InitialDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808061053479_sparprices.cs" />
+    <Compile Include="Migrations\201808061053479_sparprices.Designer.cs">
+      <DependentUpon>201808061053479_sparprices.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SPARContext.cs" />
     <Compile Include="Models\SparProductCategory.cs" />
@@ -192,6 +196,7 @@
     <Content Include="Images\images %2811%29.jfif" />
     <Content Include="Images\images %2812%29.jfif" />
     <Content Include="Images\images %2813%29.jfif" />
+    <Content Include="Images\oros.jfif" />
     <Content Include="Images\race-banner-2.jpg" />
     <Content Include="Images\SPAR_Home_Desktop_Banner-2.jpg" />
     <Content Include="Images\SPAR_Logo_1.jpg" />
@@ -247,6 +252,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201808060941409_InitialDb.resx">
       <DependentUpon>201808060941409_InitialDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808061053479_sparprices.resx">
+      <DependentUpon>201808061053479_sparprices.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

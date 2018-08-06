@@ -4,24 +4,54 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Sales</h2>
+@*<h2>Sales</h2>*@
 
-<p>
+@*<p>
     @Html.ActionLink("Create New", "Create")
-</p>
+</p>*@
 
 
-<div class="container" >
+<div class="container">
+
     <div class="row">
+
         <div class="col-lg-3" >
-            @*<h1 class="my-4">Categories</h1>*@
-            <div class="list-group" >
-                <a href="#" class="list-group-item" >Bakery</a>
-                <a href="#" class="list-group-item">Drinks</a>
-                <a href="#" class="list-group-item" >Butchery</a>
-                <a href="#" class="list-group-item" >Tops</a>
-            </div>
+            <table class="table table-striped" >
+                <tr>
+                    <th>
+                        <a href="#" class="table-striped">Bakery</a>
+                    </th>
+                    <th>
+                        <a href="#" class="table-striped">Drinks</a>
+                    </th>
+                    <th>
+                        <a href="#" class="table-striped">Butchery</a>
+                    </th>
+                    <th>
+                        <a href="#" class="table-striped">Liqour</a>
+                    </th>
+                    <th>
+                        <a href="#" class="table-striped">Household</a>
+                    </th>
+
+                    <th>
+                        <a href="#" class="table-striped">DogFood</a>
+                    </th>
+                    <th>
+                        <a href="#" class="table-striped">Dairy</a>
+                    </th>
+                    <th>
+                        <a href="#" class="table-striped">Cutlery</a>
+                    </th>
+                    <th>
+                        <a href="#" class="table-striped">Kiosk</a>
+                    </th>
+</table>
+
+
         </div>
+    </div>
+</div>
         <!-- /.col-lg-3 -->
 
         @*<div class="col-lg-9">
@@ -58,110 +88,114 @@
                 </div>*@
                 <!-- /.col-lg-9 -->
 
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#">
-                                <img class="card-img-top" src="~/Images/download (3).jfif" alt="">
-                            </a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Spekko Rice</a>
-                                </h4>
-                                <h5>  R89.99</h5>
-                                <p class="card-text">Spekko rice is economical, extremely versatile & very easy to prepare. </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
+
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="~/Images/images (11).jfif" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Sasco Flour</a>
+                        </h4>
+                        <h5>R99.99</h5>
+                        <p class="card-text">Buy 10Kg and get 2.5kg free. </p>
+                        <b><p class="card-text">15% off</p></b>
                     </div>
+                    <div class="card-footer">
 
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#">
-                                <img class="card-img-top" src="~/Images/images (10).jfif" alt="">
-                            </a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Oros Juice</a>
-                                </h4>
-                                <h5>R34.99</h5>
-                                <p class="card-text">It have 6 percent orange juice after dilution; Oros contains no tartrazine.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="~/Images/images (11).jfif" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Sasko Flour</a>
-                                </h4>
-                                <h5>R99.99</h5>
-                                <p class="card-text">SASKO believes that life should taste great – this is at the heart of everything we do! </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="~/Images/beef.jfif" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Beef</a>
-                                </h4>
-                                <h5>R49.99</h5>
-                                <p class="card-text">Tender and fresh beef.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="~/Images/images (12).jfif" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Budweirs</a>
-                                </h4>
-                                <h5>R18.99</h5>
-                                <p class="card-text">Budweiser is an American-style pale lager produced by Anheuser-Busch, currently part of the transnational corporation.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="~/Images/images (13).jfif" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Black Forest Cake</a>
-                                </h4>
-                                <h5>R69.99</h5>
-                                <p class="card-text">It is frosted with whipped cream and covered with chocolate shavings and a few cherries for decoration.</p>
-
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <!-- /.row -->
             </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="~/Images/beef.jfif"  alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Beef</a>
+                        </h4>
+                        <h5>R89.99</h5>
+                        <p class="card-text"> Fresh and Tender</p>
+                        <b><p class="card-text">30% off</p></b>
+                    </div>
+                    <div class="card-footer">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="~/Images/images (13).jfif" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Black Forest Cake</a>
+                        </h4>
+                        <h5>R99.99</h5>
+                        <p class="card-text"> Fresh and creamy.</p>
+                        <b><p class="card-text">15% off</p></b>
+                    </div>
+                    <div class="card-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="~/Images/images (12).jfif" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">Budweirs</a>
+                    </h4>
+                    <h5>R34.99</h5>
+                    <p class="card-text">330ml * 6.</p>
+                    <b><p class="card-text">15% off</p></b>
+                </div>
+                <div class="card-footer">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="~/Images/oros.jfif"  alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">Oros Juice</a>
+                    </h4>
+                    <h5>R34.99</h5>
+                    <p class="card-text"> Get 2 for R50</p>
+                    <b><p class="card-text">50% off</p></b>
+                </div>
+                <div class="card-footer">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="~/Images/download (3).jfif" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">Spekko Rice</a>
+                    </h4>
+                    <h5> R89.99</h5>
+                    <p class="card-text"> Get 2Kg free</p>
+                    <b><p class="card-text">15% off</p></b>
+
+                </div>
+                <div class="card-footer">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- /.row -->
+    </div>
         <!-- /.col-lg-9 -->
     </div>
     <!-- /.row -->
