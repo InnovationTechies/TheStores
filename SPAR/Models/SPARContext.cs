@@ -6,6 +6,7 @@ using System.Web;
 
 namespace SPAR.Models
 {
+    [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class SPARContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
