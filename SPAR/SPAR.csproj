@@ -165,6 +165,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808060941409_InitialDb.cs" />
+    <Compile Include="Migrations\201808060941409_InitialDb.Designer.cs">
+      <DependentUpon>201808060941409_InitialDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SPARContext.cs" />
     <Compile Include="Models\SparProductCategory.cs" />
     <Compile Include="Models\SparProducts.cs" />
@@ -238,6 +243,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201808060941409_InitialDb.resx">
+      <DependentUpon>201808060941409_InitialDb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
