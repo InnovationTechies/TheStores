@@ -53,7 +53,7 @@
     <div class="row">
         <div class="col-lg-9">
             <div class="row">
-                @foreach (var item in Model)
+                @foreach (var item in Model)    
                 {
                     <div class="col-lg-4 col-md-6 mb-4" style="padding:1% 1% 1% 1%">
                         <div class="card h-100 list-group-item" style="padding: 5% 5% 5% 5%; border-radius:0%">
@@ -71,18 +71,19 @@
                                 <p class="card-text">
                                     @Html.DisplayFor(modelItem => item.productDesc)
                                     <br />
-                                    @*@Html.DisplayFor(modelItem => item.productDateEndPromo)*@
-                                   @* <br />*@
+                                    @*@Html.DisplayFor(modelItem => item.productDateEndPromo)
+                                    <br />*@
                                     @Html.DisplayFor(modelItem => item.productCatagories)
                                 </p>
                             </div>
                             <div class="card-footer">
+                                @*@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.productID }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.productID })*@
 
                             </div>
                         </div>
-                        @*@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
-                            @Html.ActionLink("Details", "Details", new { id = item.productID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.productID })*@
+                      
                     </div>
 
                 }
