@@ -11,11 +11,13 @@ namespace PNP.Models
         [Key]
         public int productID { get; set; }
         public string productName { get; set; }
+        public float productPrice { get; set; }
         public string productImage { get; set; }
         public double productDropPercent { get; set; }
         public string productDesc { get; set; }
         public DateTime productDateEndPromo { get; set; }
         public IEnumerable<ProductCatagory> productCatagories { get; set; }
+
         
 
 
