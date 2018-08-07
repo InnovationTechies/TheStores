@@ -3,7 +3,47 @@
 @{
     ViewBag.Title = "Index";
 }
+<div class="container">
+    <div class="col-lg-12">
+        <a href="#">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="~/Images/H1_Standalone_Page_01_03.jpg" />
+                    </div>
+
+                    <div class="item">
+                        <img src="~/Images/pnp-logo-inspired-by-you.jpg" />
+                    </div>
+
+                    <div class="item">
+                        <img title="spanbanner.jpg" alt="spanbanner.jpg" src="~/Images/pick-n-pay-marathon1.jpg" />
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                @*<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>*@
+            </div>
+            <span></span>
+        </a>
+    </div>
+
+</div>
 <h2>Sales</h2>
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -15,32 +55,34 @@
             <div class="row">
                 @foreach (var item in Model)
                 {
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
+                    <div class="col-lg-4 col-md-6 mb-4" style="padding:1% 1% 1% 1%">
+                        <div class="card h-100 list-group-item" style="padding: 5% 5% 5% 5%; border-radius:0%">
                             <a href="#">
                                 <img class="card-img-top" src="@Url.Content(item.productImage)" alt="Product Image" height="60%" width="60%" />
                             </a>
                             <div class="card-body">
-                                <h4 class="card-title">
+                                <h3 class="card-title">
                                     <a href="#">@Html.DisplayFor(modelItem => item.productName)</a>
 
+                                </h3>
+                                <h4>
+                                    R @Html.DisplayFor(modelItem => item.productPrice)
                                 </h4>
-                                <h5>R28.99</h5>
                                 <p class="card-text">
                                     @Html.DisplayFor(modelItem => item.productDesc)
                                     <br />
-                                    @Html.DisplayFor(modelItem => item.productDateEndPromo)
-                                    <br />
+                                    @*@Html.DisplayFor(modelItem => item.productDateEndPromo)*@
+                                   @* <br />*@
                                     @Html.DisplayFor(modelItem => item.productCatagories)
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">★ ★ ★ ★ ☆</small>
+
                             </div>
                         </div>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.productID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.productID })
+                        @*@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.productID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.productID })*@
                     </div>
 
                 }
@@ -50,6 +92,8 @@
             <!-- /.row -->
         </div>
         <!-- /.col-lg-9 -->
+
+
         <div class="col-lg-3">
             <h1 class="my-4">PNP</h1>
             <div class="list-group">

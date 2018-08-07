@@ -164,7 +164,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -172,6 +171,10 @@
     <Compile Include="Migrations\201808061418232_thefinalpnpdb.cs" />
     <Compile Include="Migrations\201808061418232_thefinalpnpdb.Designer.cs">
       <DependentUpon>201808061418232_thefinalpnpdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808070907042_thepricemove.cs" />
+    <Compile Include="Migrations\201808070907042_thepricemove.Designer.cs">
+      <DependentUpon>201808070907042_thepricemove.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PNPContext.cs" />
@@ -190,11 +193,13 @@
     <Content Include="Images\bread.png" />
     <Content Include="Images\chocolate.jpg" />
     <Content Include="Images\glass.png" />
+    <Content Include="Images\H1_Standalone_Page_01_03.jpg" />
     <Content Include="Images\imgres.htm" />
     <Content Include="Images\parts.png" />
     <Content Include="Images\PICK-N-PAY-LOGO-HIRES-2.jpg" />
     <Content Include="Images\pick-n-pay-marathon1.jpg" />
     <Content Include="Images\pnp-logo-inspired-by-you.jpg" />
+    <Content Include="Images\pnp.ico" />
     <Content Include="Images\PNP.JPG" />
     <Content Include="Images\tablets.png" />
     <Content Include="Images\veg.jpg" />
@@ -225,9 +230,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Products\Create.cshtml" />
     <Content Include="Views\Products\Delete.cshtml" />
     <Content Include="Views\Products\Details.cshtml" />
@@ -253,6 +255,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201808061418232_thefinalpnpdb.resx">
       <DependentUpon>201808061418232_thefinalpnpdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808070907042_thepricemove.resx">
+      <DependentUpon>201808070907042_thepricemove.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
