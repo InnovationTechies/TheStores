@@ -111,7 +111,7 @@ namespace PNP.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo")] Products products)
+        public ActionResult Edit([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo,productPrice")] Products products)
         {
             if (ModelState.IsValid)
             {
