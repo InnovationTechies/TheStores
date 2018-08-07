@@ -13,7 +13,7 @@
             <h4 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:aliceblue">
                 WELCOME
             </h4>
-            
+
         </div>
     </div>
     <div class="navbar navbar-default navbar-fixed-top" style="background-color:white">
@@ -42,12 +42,16 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer style="background-color:deeppink">
-            <p>&copy; @DateTime.Now.Year - PNP</p>
-        </footer>
-    </div>
 
+    </div>
+    <hr />
+    <footer style="background-color:deeppink">
+        
+        
+        <p>&copy; @DateTime.Now.Year - PNP</p>
+
+
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
