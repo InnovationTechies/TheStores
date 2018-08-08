@@ -173,6 +173,10 @@
     <Compile Include="Migrations\201808081054221_firstMigrationWoolworth.Designer.cs">
       <DependentUpon>201808081054221_firstMigrationWoolworth.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808081332178_Priceupdate.cs" />
+    <Compile Include="Migrations\201808081332178_Priceupdate.Designer.cs">
+      <DependentUpon>201808081332178_Priceupdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\WOOLWORTHContext.cs" />
     <Compile Include="Models\WoolworthProductCatergory.cs" />
@@ -258,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808081054221_firstMigrationWoolworth.resx">
       <DependentUpon>201808081054221_firstMigrationWoolworth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808081332178_Priceupdate.resx">
+      <DependentUpon>201808081332178_Priceupdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
