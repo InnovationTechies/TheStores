@@ -7,13 +7,13 @@ namespace SPAR.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialDb : IMigrationMetadata
+    public sealed partial class asiphe : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialDb));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(asiphe));
         
         string IMigrationMetadata.Id
         {
-            get { return "201808060941409_InitialDb"; }
+            get { return "201808080841273_asiphe"; }
         }
         
         string IMigrationMetadata.Source
