@@ -8,8 +8,8 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body background="~/img/slider3.jpg">
-   
-        @*<@*div class="container">
+
+    @*<@*div class="container">
             <h4 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:aliceblue">
                 <font color="black"><b>WELCOME!</b></font>
             </h4>
@@ -24,18 +24,83 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <img src="~/img/logo.jfif"/>
+                <img src="~/img/logo.jfif" />
                 @*@Html.ActionLink("WOOLWORTHS", "Index", "WoolworthProducts", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
         </div>
     </div>
     <div class="container body-content">
+
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+
     </div>
+    <hr />
+    <footer style="background-color:black">
+
+        <br />
+        <br />
+        <div class="container">
+            <a href="#">
+                <img src="~/img/logo.jfif"/>
+            </a>
+            <div class="row col-lg-12">
+
+                <div class="col-lg-3">
+                    <div style="text-emphasis-color:white">
+                        <h4>
+                            <a style="color:white" href="#">
+                                MANAGE
+                            </a>
+                            <br />
+                            <a style="color:white">
+                                PRODUCTS
+                            </a>
+                            <br />
+                            <a style="color:white">
+                                SPECIALS
+                            </a>
+                            <br />
+                            <a style="color:white">
+                                CATAGORIES
+                            </a>
+                            <a style="color:white" href="#">
+                                WEEKEND
+                            </a>
+                            <br />
+                            <a style="color:white">
+                                ONLINE
+                            </a>
+                            <br />
+                            <a style="color:white">
+                                ABOUT
+                            </a>
+                            <br />
+                            <a style="color:white">
+                                CONTACT
+                            </a>  <a style="color:white" href="#">
+                                ONLINE
+                            </a>
+                            <br />
+                            <a style="color:white">
+                                PRODUCTS
+                            </a>
+                            <br />
+                            <a style="color:white">
+                                ABOUT
+                            </a>
+                            <br />
+                            <a style="color:white">
+                                CONTACT
+                            </a>
+                        </h4>
+                    </div>
+
+                </div>
+            </div>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </div>
+    </footer>
+   
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

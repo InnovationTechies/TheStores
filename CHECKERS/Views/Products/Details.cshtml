@@ -9,48 +9,55 @@
 <div>
     <h4>Products</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.productName)
-        </dt>
+	<dl class="dl-horizontal">
+		<dt>
+			@Html.DisplayNameFor(model => model.productName)
+		</dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.productName)
-        </dd>
+		<dd>
+			@Html.DisplayFor(model => model.productName)
+		</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.productImage)
-        </dt>
+		<dt>
+			@Html.DisplayNameFor(model => model.productImage)
+		</dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.productImage)
-        </dd>
+		<dd>
+			@Html.DisplayFor(model => model.productImage)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.productPrice)
+		</dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.productDropPercent)
-        </dt>
+		<dd>
+			@Html.DisplayFor(model => model.productPrice)
+		</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.productDropPercent)
-        </dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.productDropPercent)
+		</dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.productDesc)
-        </dt>
+		<dd>
+			@Html.DisplayFor(model => model.productDropPercent)
+		</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.productDesc)
-        </dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.productDesc)
+		</dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.productDateEndPromo)
-        </dt>
+		<dd>
+			@Html.DisplayFor(model => model.productDesc)
+		</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.productDateEndPromo)
-        </dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.productDateEndPromo)
+		</dt>
 
-    </dl>
+		<dd>
+			@Html.DisplayFor(model => model.productDateEndPromo)
+		</dd>
+
+	</dl>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.productID }) |

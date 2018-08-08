@@ -173,6 +173,14 @@
     <Compile Include="Migrations\201808061128285_Checkersprices.Designer.cs">
       <DependentUpon>201808061128285_Checkersprices.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808081354326_Sonkie.cs" />
+    <Compile Include="Migrations\201808081354326_Sonkie.Designer.cs">
+      <DependentUpon>201808081354326_Sonkie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808081410244_SongiPrices.cs" />
+    <Compile Include="Migrations\201808081410244_SongiPrices.Designer.cs">
+      <DependentUpon>201808081410244_SongiPrices.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CHECKERSContext.cs" />
     <Compile Include="Models\ProductCategory.cs" />
@@ -300,6 +308,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808061128285_Checkersprices.resx">
       <DependentUpon>201808061128285_Checkersprices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808081354326_Sonkie.resx">
+      <DependentUpon>201808081354326_Sonkie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808081410244_SongiPrices.resx">
+      <DependentUpon>201808081410244_SongiPrices.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
