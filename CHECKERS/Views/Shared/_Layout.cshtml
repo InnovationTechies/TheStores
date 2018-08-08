@@ -7,7 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
+<body >
 	<div class="navbar" style="background-color: white; height:auto; border-radius:0px">
 		<div class="container">
 			<div class="navbar-header">
@@ -18,16 +18,18 @@
 				</button>
 				<img src="~/fonts/images/download 12.png" />
 
-				<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#myCarousel" data-slide-to="1"></li>
 						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					
 					</ol>
 
 					<!-- Wrapper for slides -->
-					<div class="carousel-inner" metada="align: 'center'">
+					<div class="carousel-inner">
 						<div class="item active">
 							<img src="~/fonts/images/checkers1 - Copy (2).jpg">
 						</div>
@@ -37,9 +39,16 @@
 						</div>
 
 						<div class="item">
+							<img src="~/fonts/images/Prawn-100-v2.jpg">
+						</div>
+
+
+						<div class="item">
 							<img src="~/fonts/images/Header - Copy.jpg">
 						</div>
 					</div>
+				</div>
+			</div>
 
 					<!-- Left and right controls -->
 					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -53,12 +62,15 @@
 				</div>
 				</div>
 		
-	</div>
+	
 	<div class="container body-content">
 		@RenderBody()
 		<hr />
+		
 		<footer>
-			<p>&copy; @DateTime.Now.Year -Songeziwe Nciweni</p>
+			<div>
+				<p>&copy; @DateTime.Now.Year -Checkers </p>
+			</div>
 		</footer>
 	</div>
 
