@@ -8,8 +8,10 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    
     <div class="navbar" style="background-color: mediumseagreen; height:auto; border-radius:0px">
         <div class="container">
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -56,21 +58,157 @@
                 @*Html.ActionLink("SPAR SUPERMARKET", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             @*<div class="navbar-collapse collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>*@
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </div>*@
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
+        </div>
         <hr />
-        <footer style="background-color:red" >
-            <b><p font size="18">&copy; @DateTime.Now.Year - SPAR</p></b>
+        <footer style="background-color:red" width="280">
+            <br />
+            <br />
+            <div class="container">
+                <a href="#">
+                    <img src="~/Images/SPAR_Logo_1.jpg" />
+                </a>
+                </div>
+                <div class="row col-lg-12">
+
+                    <div class="col-sm-6 col-md-3">
+                        <div style="text-emphasis-color:white">
+                            <h2>Quick Links</h2>
+
+                            <h4>
+                                <a style="color:white" href="#">
+                                    Home
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    Specials
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    Store Finder
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    Recipes
+                                </a>
+                                <br/>
+                                <a style="color:white" href="#">
+                                    SPAR Rewards
+                                </a>
+                                <br />
+
+                            </h4>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div style="text-emphasis-color:white">
+                            <h2>About SPAR</h2>
+
+                            <h4>
+                                <a style="color:white" href="#">
+                                    Our Business
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    SPAR Financial
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    Own a SPAR
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    Careers
+                                </a>
+                                <a style="color:white" href="#">
+                                    Sustainability
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    Access to Information
+                                </a>
+                                <br />
+                                
+                            </h4>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div style="text-emphasis-color:white">
+                            <h2>Contact Us</h2>
+
+                            <h4>
+                                <a style="color:white" href="#">
+                                    Contact Details
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    SPAR Customer Care
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    SPAR Rewards Customer Care
+                                </a>
+                                <br />
+                                
+                            </h4>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 col-md-3 footer-newsletter">
+                        <h2>Newsletter Signup</h2>
+
+                        <div style="text-emphasis-color:white">
+                            <h4>
+                                <a style="color:white" href="#">
+                                    MANAGE
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    PRODUCTS
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    SPECIALS
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    CATAGORIES
+                                </a>
+                                <a style="color:white" href="#">
+                                    WEEKEND
+                                </a>
+                                <br />
+                                <a style="color:white">
+                                    ONLINE
+                                </a>
+                                <br />
+                                
+                            </h4>
+                        </div>
+
+                    </div>
+
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+
+
+                <b><p font size="18">&copy; @DateTime.Now.Year - SPAR</p></b>
         </footer>
-    </div>
+   
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
