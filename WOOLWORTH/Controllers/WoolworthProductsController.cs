@@ -78,7 +78,7 @@ namespace WOOLWORTH.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo")] WoolworthProducts woolworthProducts)
+        public ActionResult Edit([Bind(Include = "productID,productName,productImage,ProductPrice,productDropPercent,productDesc,productDateEndPromo")] WoolworthProducts woolworthProducts)
         {
             if (ModelState.IsValid)
             {
