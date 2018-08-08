@@ -165,6 +165,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808061230318_InitialCreate.cs" />
+    <Compile Include="Migrations\201808061230318_InitialCreate.Designer.cs">
+      <DependentUpon>201808061230318_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808081054221_firstMigrationWoolworth.cs" />
+    <Compile Include="Migrations\201808081054221_firstMigrationWoolworth.Designer.cs">
+      <DependentUpon>201808081054221_firstMigrationWoolworth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\WOOLWORTHContext.cs" />
     <Compile Include="Models\WoolworthProductCatergory.cs" />
     <Compile Include="Models\WoolworthProducts.cs" />
@@ -242,6 +251,14 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201808061230318_InitialCreate.resx">
+      <DependentUpon>201808061230318_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808081054221_firstMigrationWoolworth.resx">
+      <DependentUpon>201808081054221_firstMigrationWoolworth.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
