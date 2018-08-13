@@ -14,6 +14,7 @@ namespace PNP.Controllers
     public class ProductsController : Controller
     {
         private PNPContext db = new PNPContext();
+        private ProductCatagoriesContext dbProdCat = new ProductCatagoriesContext();
 
         // GET: Products
         public ActionResult Index()
@@ -39,7 +40,10 @@ namespace PNP.Controllers
         // GET: Products/Create
         public ActionResult Create()
         {
+
+            ViewData["ProductCatagory"] = dbProdCat.ProductCatagories.ToList();
             return View();
+
         }
 
         [HttpPost]
@@ -111,7 +115,7 @@ namespace PNP.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo")] Products products)
+        public ActionResult Edit([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo,productPrice")] Products products)
         {
             if (ModelState.IsValid)
             {

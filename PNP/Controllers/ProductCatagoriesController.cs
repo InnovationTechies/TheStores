@@ -6,111 +6,111 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using WOOLWORTH.Models;
+using PNP.Models;
 
-namespace WOOLWORTH.Controllers
+namespace PNP.Controllers
 {
-    public class WoolworthProductsController : Controller
+    public class ProductCatagoriesController : Controller
     {
-        private WOOLWORTHContext db = new WOOLWORTHContext();
+        private ProductCatagoriesContext db = new ProductCatagoriesContext();
 
-        // GET: WoolworthProducts
+        // GET: ProductCatagories
         public ActionResult Index()
         {
-            return View(db.WoolworthProducts.ToList());
+            return View(db.ProductCatagories.ToList());
         }
 
-        // GET: WoolworthProducts/Details/5
+        // GET: ProductCatagories/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            WoolworthProducts woolworthProducts = db.WoolworthProducts.Find(id);
-            if (woolworthProducts == null)
+            ProductCatagory productCatagory = db.ProductCatagories.Find(id);
+            if (productCatagory == null)
             {
                 return HttpNotFound();
             }
-            return View(woolworthProducts);
+            return View(productCatagory);
         }
 
-        // GET: WoolworthProducts/Create
+        // GET: ProductCatagories/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: WoolworthProducts/Create
+        // POST: ProductCatagories/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "productID,productName,productImage,ProductPrice,productDropPercent,productDesc,productDateEndPromo")] WoolworthProducts woolworthProducts)
+        public ActionResult Create([Bind(Include = "catagoryID,catagoryName,catagoryDesc")] ProductCatagory productCatagory)
         {
             if (ModelState.IsValid)
             {
-                db.WoolworthProducts.Add(woolworthProducts);
+                db.ProductCatagories.Add(productCatagory);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(woolworthProducts);
+            return View(productCatagory);
         }
 
-        // GET: WoolworthProducts/Edit/5
+        // GET: ProductCatagories/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            WoolworthProducts woolworthProducts = db.WoolworthProducts.Find(id);
-            if (woolworthProducts == null)
+            ProductCatagory productCatagory = db.ProductCatagories.Find(id);
+            if (productCatagory == null)
             {
                 return HttpNotFound();
             }
-            return View(woolworthProducts);
+            return View(productCatagory);
         }
 
-        // POST: WoolworthProducts/Edit/5
+        // POST: ProductCatagories/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "productID,productName,productImage,ProductPrice,productDropPercent,productDesc,productDateEndPromo")] WoolworthProducts woolworthProducts)
+        public ActionResult Edit([Bind(Include = "catagoryID,catagoryName,catagoryDesc")] ProductCatagory productCatagory)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(woolworthProducts).State = EntityState.Modified;
+                db.Entry(productCatagory).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(woolworthProducts);
+            return View(productCatagory);
         }
 
-        // GET: WoolworthProducts/Delete/5
+        // GET: ProductCatagories/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            WoolworthProducts woolworthProducts = db.WoolworthProducts.Find(id);
-            if (woolworthProducts == null)
+            ProductCatagory productCatagory = db.ProductCatagories.Find(id);
+            if (productCatagory == null)
             {
                 return HttpNotFound();
             }
-            return View(woolworthProducts);
+            return View(productCatagory);
         }
 
-        // POST: WoolworthProducts/Delete/5
+        // POST: ProductCatagories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            WoolworthProducts woolworthProducts = db.WoolworthProducts.Find(id);
-            db.WoolworthProducts.Remove(woolworthProducts);
+            ProductCatagory productCatagory = db.ProductCatagories.Find(id);
+            db.ProductCatagories.Remove(productCatagory);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
