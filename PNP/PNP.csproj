@@ -164,6 +164,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ProductCatagoriesController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -174,6 +175,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PNPContext.cs" />
+    <Compile Include="Models\ProductCatagoriesContext.cs" />
     <Compile Include="Models\ProductCatagory.cs" />
     <Compile Include="Models\Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -232,6 +234,11 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\ProductCatagories\Create.cshtml" />
+    <Content Include="Views\ProductCatagories\Delete.cshtml" />
+    <Content Include="Views\ProductCatagories\Details.cshtml" />
+    <Content Include="Views\ProductCatagories\Edit.cshtml" />
+    <Content Include="Views\ProductCatagories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
