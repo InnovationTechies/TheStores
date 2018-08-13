@@ -9,7 +9,7 @@
 	<div class="row">
 
 		<div class="col-lg-3">
-			<table class="table table-hover" align="center">
+			<table class="table table-hover" align="center" style="color:teal">
 				<tr>
 					<th>
 						<a href="#" class="table-striped">Bakery</a>
@@ -84,14 +84,14 @@
 							<div class="card-body">
 								<h3 class="card-title">
 									<a href="#">@Html.DisplayFor(modelItem => item.productName)</a>
-
+									
 								</h3>
+								
 
-
-								@*<h4>
+								<h4>
 			R @Html.DisplayFor(modelItem => item.productPrice)
-		</h4>*@
-								<h5>R24.99</h5>
+		</h4>
+								@*<h5>R24.99</h5>*@
 								<p class="card-text">
 									@Html.DisplayFor(modelItem => item.productDesc)
 									<br />
@@ -102,9 +102,9 @@
 							</div>
 							<div class="card-footer">
 								<small class="text-muted">★ ★ ★ ★ ☆</small>
-								@*@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
+								@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
 								@Html.ActionLink("Details", "Details", new { id = item.productID }) |
-								@Html.ActionLink("Delete", "Delete", new { id = item.productID })*@
+								@Html.ActionLink("Delete", "Delete", new { id = item.productID })
 
 							</div>
 						</div>
