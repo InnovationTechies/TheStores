@@ -31,13 +31,21 @@
 		<div class="col-md-10">
 
 			@Html.EditorFor(model => model.productImage, new { htmlAttributes = new { @class = "form-control" } })
-			@Html.ValidationMessageFor(model => model.productImage, "", new { @class = "text-danger" })
+		@Html.ValidationMessageFor(model => model.productImage, "", new { @class = "text-danger" })
 
-			<form action="/action_page.php">
+			@*<form action="/action_page.php">
 
-				<input type="file" name="pic" accept="image/*">
-				@*<input type="submit" class="btn btn-primary">*@
-			</form>
+			<input type="file" name="pic" accept="image/*">
+			<input type="submit" class="btn btn-primary">
+		</form>*@
+		
+			
+			<img id="image" alt="" width="280" height="280" />
+
+			<input type="file"
+				   onchange="document.getElementById('image').src = window.URL.createObjectURL(this.files[0])">
+
+
 		</div>
 	</div>
 
