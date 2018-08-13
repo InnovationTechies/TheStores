@@ -192,9 +192,11 @@
     <Content Include="Images\Budweirs.jfif" />
     <Content Include="Images\download %283%29.jfif" />
     <Content Include="Images\fritos.jfif" />
+    <Content Include="Images\Header.jpg" />
     <Content Include="Images\images %2813%29.jfif" />
     <Content Include="Images\oros.jfif" />
     <Content Include="Images\race-banner-2.jpg" />
+    <Content Include="Images\rewards_banner.jpg" />
     <Content Include="Images\Sasko.jfif" />
     <Content Include="Images\SPAR_Home_Desktop_Banner-2.jpg" />
     <Content Include="Images\SPAR_Logo_1.jpg" />
