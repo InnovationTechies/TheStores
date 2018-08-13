@@ -97,14 +97,16 @@
 									<br />
 									@Html.DisplayFor(modelItem => item.productDateEndPromo)
 									<br />
+									@Html.DisplayFor(modelItem => item.productDropPercent)% Off
+									<br />
 									@Html.DisplayFor(modelItem => item.productCategory)
 								</p>
 							</div>
 							<div class="card-footer">
 								<small class="text-muted">★ ★ ★ ★ ☆</small>
-								@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
+								@*@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
 								@Html.ActionLink("Details", "Details", new { id = item.productID }) |
-								@Html.ActionLink("Delete", "Delete", new { id = item.productID })
+								@Html.ActionLink("Delete", "Delete", new { id = item.productID })*@
 
 							</div>
 						</div>
