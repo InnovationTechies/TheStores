@@ -33,11 +33,24 @@
 			@Html.EditorFor(model => model.productImage, new { htmlAttributes = new { @class = "form-control" } })
 			@Html.ValidationMessageFor(model => model.productImage, "", new { @class = "text-danger" })
 
-			<form action="/action_page.php">
+			@*<form action="/action_page.php">
 
-				<input type="file" name="pic" accept="image/*">
-				@*<input type="submit" class="btn btn-primary">*@
+			<input type="file" name="pic" accept="image/*">
+			<input type="submit" class="btn btn-primary">
+		</form>*@
+
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+				<img id="image" alt="" width="280" height="280" />
+				<input type="file" onchange="document.getElementById('image').src = window.URL.createObjectURL(this.files[0])" name="fileToUpload" id="image">
+				@*<input type="submit" value="Upload Image" name="submit">*@
 			</form>
+
+			
+
+			@*<input type="file"
+				   onchange="document.getElementById('image').src = window.URL.createObjectURL(this.files[0])">*@
+
+
 		</div>
 	</div>
 

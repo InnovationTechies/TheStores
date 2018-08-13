@@ -7,7 +7,7 @@
 @*<h2>Sales</h2>*@
 
 <p>
-    @Html.ActionLink("Manager", "Create")
+    @*@Html.ActionLink("Manager", "Create")*@
 </p>
 
 
@@ -76,7 +76,7 @@
                 <!-- /.col-lg-9 -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
             <div class="row">
                 @foreach (var item in Model)
                 {
@@ -97,25 +97,26 @@
                                 <b> @Html.DisplayFor(modelItem => item.productDescription) </b>
                                 <br />
                                 <b>
-                                    @Html.DisplayFor(modelItem => item.productDropPercent) % <b>
+                                    @Html.DisplayFor(modelItem => item.productDropPercent) % Off <b>
                                     <br />
                                     @Html.DisplayFor(modelItem => item.productDateEndPromo)
                                     <br />
                                     @*@Html.DisplayFor(modelItem => item.ProductCategory)*@
                         </p>
+                        </div>
 
                     </div>
                     <div class="card-footer">
-                        @Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
+                        @*@Html.ActionLink("Edit", "Edit", new { id = item.productID }) |
                         @Html.ActionLink("Details", "Details", new { id = item.productID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.productID })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.productID })*@
 
                     </div>
                 </div>
 
 
                 
-                </div>
+               
 
                 }
 
