@@ -165,13 +165,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201808060941409_InitialDb.cs" />
-    <Compile Include="Migrations\201808060941409_InitialDb.Designer.cs">
-      <DependentUpon>201808060941409_InitialDb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808061053479_sparprices.cs" />
-    <Compile Include="Migrations\201808061053479_sparprices.Designer.cs">
-      <DependentUpon>201808061053479_sparprices.cs</DependentUpon>
+    <Compile Include="Migrations\201808080841273_asiphe.cs" />
+    <Compile Include="Migrations\201808080841273_asiphe.Designer.cs">
+      <DependentUpon>201808080841273_asiphe.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SPARContext.cs" />
@@ -255,11 +251,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808060941409_InitialDb.resx">
-      <DependentUpon>201808060941409_InitialDb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808061053479_sparprices.resx">
-      <DependentUpon>201808061053479_sparprices.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201808080841273_asiphe.resx">
+      <DependentUpon>201808080841273_asiphe.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
