@@ -7,13 +7,13 @@ namespace PNP.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class thefinalpnpdb : IMigrationMetadata
+    public sealed partial class theflow : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(thefinalpnpdb));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(theflow));
         
         string IMigrationMetadata.Id
         {
-            get { return "201808061418232_thefinalpnpdb"; }
+            get { return "201808102157479_theflow"; }
         }
         
         string IMigrationMetadata.Source

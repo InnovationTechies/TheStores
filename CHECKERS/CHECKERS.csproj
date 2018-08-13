@@ -173,6 +173,14 @@
     <Compile Include="Migrations\201808061128285_Checkersprices.Designer.cs">
       <DependentUpon>201808061128285_Checkersprices.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808081354326_Sonkie.cs" />
+    <Compile Include="Migrations\201808081354326_Sonkie.Designer.cs">
+      <DependentUpon>201808081354326_Sonkie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808081410244_SongiPrices.cs" />
+    <Compile Include="Migrations\201808081410244_SongiPrices.Designer.cs">
+      <DependentUpon>201808081410244_SongiPrices.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CHECKERSContext.cs" />
     <Compile Include="Models\ProductCategory.cs" />
@@ -185,16 +193,13 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\images\33830T-Live-better-Wellness-50-card-OPT1.jpg" />
-    <Content Include="fonts\images\Avos-in-season-505x315 - Copy.jpg" />
-    <Content Include="fonts\images\Avos-in-season-505x315.jpg" />
-    <Content Include="fonts\images\Avos-in.jpg" />
     <Content Include="fonts\images\back.jfif" />
     <Content Include="fonts\images\background - Copy.jfif" />
     <Content Include="fonts\images\background.jfif" />
+    <Content Include="fonts\images\banana.png" />
+    <Content Include="fonts\images\bananas.jpg" />
+    <Content Include="fonts\images\bokomo musli.jpg" />
     <Content Include="fonts\images\bread - Copy.jfif" />
-    <Content Include="fonts\images\bread.jfif" />
-    <Content Include="fonts\images\championship-wors-n - Copy.jpg" />
-    <Content Include="fonts\images\championship-wors-n.jpg" />
     <Content Include="fonts\images\check - Copy.jfif" />
     <Content Include="fonts\images\check.jfif" />
     <Content Include="fonts\images\Checkers - Copy.jpg" />
@@ -213,7 +218,9 @@
     <Content Include="fonts\images\download.jfif" />
     <Content Include="fonts\images\download.png" />
     <Content Include="fonts\images\e_compass - Copy.JPG" />
+    <Content Include="fonts\images\Fries.jpeg" />
     <Content Include="fonts\images\fruit - Copy.jpg" />
+    <Content Include="fonts\images\fruit-juice-featured-image.jpg" />
     <Content Include="fonts\images\fruit.jpg" />
     <Content Include="fonts\images\ground.jfif" />
     <Content Include="fonts\images\Header - Copy.jpg" />
@@ -226,20 +233,31 @@
     <Content Include="fonts\images\milk - Copy - Copy.jfif" />
     <Content Include="fonts\images\milk - Copy.jfif" />
     <Content Include="fonts\images\milk.jfif" />
+    <Content Include="fonts\images\musli.jpg" />
     <Content Include="fonts\images\mvhomepage2 - Copy - Copy.jpg" />
     <Content Include="fonts\images\mvhomepage2 - Copy.jpg" />
     <Content Include="fonts\images\mvhomepage2.jpg" />
+    <Content Include="fonts\images\Oreos.jfif" />
+    <Content Include="fonts\images\oreos1.jpeg" />
+    <Content Include="fonts\images\parmalat-smooth-medium-fat-plain-yogurt-1kg.jpg" />
+    <Content Include="fonts\images\pork.png" />
+    <Content Include="fonts\images\pork_loin_joint-300x300.jpg" />
     <Content Include="fonts\images\Prawn-100-v2.jpg" />
+    <Content Include="fonts\images\Ribs.jpg" />
     <Content Include="fonts\images\salad.jfif" />
     <Content Include="fonts\images\shop - Copy %282%29.jpg" />
     <Content Include="fonts\images\shop - Copy - Copy.jpg" />
     <Content Include="fonts\images\shop - Copy.jpg" />
     <Content Include="fonts\images\shop.jpg" />
+    <Content Include="fonts\images\smooth yogurt.jpg" />
     <Content Include="fonts\images\steakhouse-n - Copy.jpg" />
     <Content Include="fonts\images\steakhouse-n.jpg" />
+    <Content Include="fonts\images\Trop Juice.jpg" />
     <Content Include="fonts\images\wine.jfif" />
     <Content Include="fonts\images\wine1.jfif" />
     <Content Include="fonts\images\wines.jfif" />
+    <Content Include="fonts\images\Wors.jpg" />
+    <Content Include="fonts\images\yogurt.jpeg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -300,6 +318,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808061128285_Checkersprices.resx">
       <DependentUpon>201808061128285_Checkersprices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808081354326_Sonkie.resx">
+      <DependentUpon>201808081354326_Sonkie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808081410244_SongiPrices.resx">
+      <DependentUpon>201808081410244_SongiPrices.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

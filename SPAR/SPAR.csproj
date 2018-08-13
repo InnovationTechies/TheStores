@@ -165,13 +165,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201808060941409_InitialDb.cs" />
-    <Compile Include="Migrations\201808060941409_InitialDb.Designer.cs">
-      <DependentUpon>201808060941409_InitialDb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808061053479_sparprices.cs" />
-    <Compile Include="Migrations\201808061053479_sparprices.Designer.cs">
-      <DependentUpon>201808061053479_sparprices.cs</DependentUpon>
+    <Compile Include="Migrations\201808080841273_asiphe.cs" />
+    <Compile Include="Migrations\201808080841273_asiphe.Designer.cs">
+      <DependentUpon>201808080841273_asiphe.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SPARContext.cs" />
@@ -189,17 +185,22 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\2018_CancerVive.jpg" />
     <Content Include="Images\2018_Win_A_Car.jpg" />
+    <Content Include="Images\Baby oil.jfif" />
     <Content Include="Images\beef.jfif" />
+    <Content Include="Images\Budweirs.jfif" />
     <Content Include="Images\download %283%29.jfif" />
-    <Content Include="Images\images %2810%29.jfif" />
-    <Content Include="Images\images %2811%29.jfif" />
-    <Content Include="Images\images %2812%29.jfif" />
+    <Content Include="Images\fritos.jfif" />
     <Content Include="Images\images %2813%29.jfif" />
     <Content Include="Images\oros.jfif" />
     <Content Include="Images\race-banner-2.jpg" />
+    <Content Include="Images\Sasko.jfif" />
     <Content Include="Images\SPAR_Home_Desktop_Banner-2.jpg" />
     <Content Include="Images\SPAR_Logo_1.jpg" />
+    <Content Include="Images\Store_Finder_Page_Header_Desktop.png" />
+    <Content Include="Images\wine.jfif" />
+    <Content Include="Images\zyliss-web.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -250,11 +251,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808060941409_InitialDb.resx">
-      <DependentUpon>201808060941409_InitialDb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808061053479_sparprices.resx">
-      <DependentUpon>201808061053479_sparprices.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201808080841273_asiphe.resx">
+      <DependentUpon>201808080841273_asiphe.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

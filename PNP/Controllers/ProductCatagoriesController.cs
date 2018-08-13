@@ -6,111 +6,111 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using SPAR.Models;
+using PNP.Models;
 
-namespace SPAR.Controllers
+namespace PNP.Controllers
 {
-    public class SparProductsController : Controller
+    public class ProductCatagoriesController : Controller
     {
-        private SPARContext db = new SPARContext();
+        private ProductCatagoriesContext db = new ProductCatagoriesContext();
 
-        // GET: SparProducts
+        // GET: ProductCatagories
         public ActionResult Index()
         {
-            return View(db.SparProducts.ToList());
+            return View(db.ProductCatagories.ToList());
         }
 
-        // GET: SparProducts/Details/5
+        // GET: ProductCatagories/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            SparProducts sparProducts = db.SparProducts.Find(id);
-            if (sparProducts == null)
+            ProductCatagory productCatagory = db.ProductCatagories.Find(id);
+            if (productCatagory == null)
             {
                 return HttpNotFound();
             }
-            return View(sparProducts);
+            return View(productCatagory);
         }
 
-        // GET: SparProducts/Create
+        // GET: ProductCatagories/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: SparProducts/Create
+        // POST: ProductCatagories/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "productID,productName,productImage,productPrice,productDropPercent,productDescription,productDateEndPromo")] SparProducts sparProducts)
+        public ActionResult Create([Bind(Include = "catagoryID,catagoryName,catagoryDesc")] ProductCatagory productCatagory)
         {
             if (ModelState.IsValid)
             {
-                db.SparProducts.Add(sparProducts);
+                db.ProductCatagories.Add(productCatagory);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(sparProducts);
+            return View(productCatagory);
         }
 
-        // GET: SparProducts/Edit/5
+        // GET: ProductCatagories/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            SparProducts sparProducts = db.SparProducts.Find(id);
-            if (sparProducts == null)
+            ProductCatagory productCatagory = db.ProductCatagories.Find(id);
+            if (productCatagory == null)
             {
                 return HttpNotFound();
             }
-            return View(sparProducts);
+            return View(productCatagory);
         }
 
-        // POST: SparProducts/Edit/5
+        // POST: ProductCatagories/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "productID,productName,productImage,productPrice,productDropPercent,productDescription,productDateEndPromo")] SparProducts sparProducts)
+        public ActionResult Edit([Bind(Include = "catagoryID,catagoryName,catagoryDesc")] ProductCatagory productCatagory)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(sparProducts).State = EntityState.Modified;
+                db.Entry(productCatagory).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(sparProducts);
+            return View(productCatagory);
         }
 
-        // GET: SparProducts/Delete/5
+        // GET: ProductCatagories/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            SparProducts sparProducts = db.SparProducts.Find(id);
-            if (sparProducts == null)
+            ProductCatagory productCatagory = db.ProductCatagories.Find(id);
+            if (productCatagory == null)
             {
                 return HttpNotFound();
             }
-            return View(sparProducts);
+            return View(productCatagory);
         }
 
-        // POST: SparProducts/Delete/5
+        // POST: ProductCatagories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            SparProducts sparProducts = db.SparProducts.Find(id);
-            db.SparProducts.Remove(sparProducts);
+            ProductCatagory productCatagory = db.ProductCatagories.Find(id);
+            db.ProductCatagories.Remove(productCatagory);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
