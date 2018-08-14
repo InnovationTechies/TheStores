@@ -14,7 +14,7 @@ namespace PNP.Controllers
     public class ProductsController : Controller
     {
         private PNPContext db = new PNPContext();
-        private ProductCatagoriesContext dbProdCat = new ProductCatagoriesContext();
+        //private ProductCatagoriesContext dbProdCat = new ProductCatagoriesContext();
 
         // GET: Products
         public ActionResult Index()
@@ -41,7 +41,7 @@ namespace PNP.Controllers
         public ActionResult Create()
         {
 
-            ViewData["ProductCatagory"] = dbProdCat.ProductCatagories.ToList();
+            //ViewData["ProductCatagory"] = dbProdCat.ProductCatagories.ToList();
             return View();
 
         }
