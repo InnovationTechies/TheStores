@@ -169,13 +169,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201808102157479_theflow.cs" />
-    <Compile Include="Migrations\201808102157479_theflow.Designer.cs">
-      <DependentUpon>201808102157479_theflow.cs</DependentUpon>
+    <Compile Include="Migrations\201808151342412_thenewmig.cs" />
+    <Compile Include="Migrations\201808151342412_thenewmig.Designer.cs">
+      <DependentUpon>201808151342412_thenewmig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808151344075_thesalesmig.cs" />
+    <Compile Include="Migrations\201808151344075_thesalesmig.Designer.cs">
+      <DependentUpon>201808151344075_thesalesmig.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PNPContext.cs" />
-    <Compile Include="Models\ProductCatagoriesContext.cs" />
+    <Compile Include="Models\PnpEmployee.cs" />
+    <Compile Include="Models\PnpLocation.cs" />
+    <Compile Include="Models\PnpManager.cs" />
+    <Compile Include="Models\PnpSales.cs" />
+    <Compile Include="Models\PnpSpecial.cs" />
     <Compile Include="Models\ProductCatagory.cs" />
     <Compile Include="Models\Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -257,8 +265,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808102157479_theflow.resx">
-      <DependentUpon>201808102157479_theflow.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201808151342412_thenewmig.resx">
+      <DependentUpon>201808151342412_thenewmig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808151344075_thesalesmig.resx">
+      <DependentUpon>201808151344075_thesalesmig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
