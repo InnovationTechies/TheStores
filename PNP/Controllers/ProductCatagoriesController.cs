@@ -12,7 +12,7 @@ namespace PNP.Controllers
 {
     public class ProductCatagoriesController : Controller
     {
-        private ProductCatagoriesContext db = new ProductCatagoriesContext();
+        private PNPContext db = new PNPContext();
 
         // GET: ProductCatagories
         public ActionResult Index()

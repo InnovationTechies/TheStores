@@ -26,16 +26,24 @@
     <div class="form-group">
         @Html.LabelFor(model => model.productImage, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.productImage, new { htmlAttributes = new { @class = "form-control-file", @type = "file", @name = "file" } })
+            @Html.EditorFor(model => model.productImage, new { htmlAttributes = new { @class = "form-control-file", @type = "file", @name = "file", @accept = "~/Images/*", @onchange = "previewImage(event)" } })
             @Html.ValidationMessageFor(model => model.productImage, "", new { @class = "text-danger" })
+
+            <img src="~/Images/bread.png"
+                 alt="" id="instrumentImage"
+                 class="img-thumbnail" width="280" />
+
         </div>
     </div>
+
+   
+
 
     <div class="form-group">
         @Html.LabelFor(model => model.productCatagories, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.DropDownList("ProductCatagory", ViewData["ProductCatagory"] as List<SelectListItem>)
-            @*@Html.EditorFor(model => model.productCatagories, )*@
+            @*@Html.DropDownList("ProductCatagory", ViewData["ProductCatagory"] as List<SelectListItem>)*@
+            @Html.EditorFor(model => model.productCatagories, new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.productCatagories, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -57,9 +65,6 @@
             @Html.ValidationMessageFor(model => model.productDropPercent, "", new { @class = "text-danger" })
         </div>
     </div>
-
-
-
 
     <div class="form-group">
         @Html.LabelFor(model => model.productDesc, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -83,6 +88,8 @@
         </div>
     </div>
 </div>
+
+
 }
 
 <div>
@@ -91,4 +98,16 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+
 }
+<script>
+    
+function previewImage(event) {
+    // Get a reference to the image element
+    var image = document.querySelector("#instrumentImage");
+    // Set its source to the file in the <input type=file element
+    image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+</script>
