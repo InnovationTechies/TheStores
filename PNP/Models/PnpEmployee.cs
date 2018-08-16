@@ -25,5 +25,7 @@ namespace PNP.Models
         [Display(Name = "Date")]
         public DateTime pnpDateTime { get; set; }
 
+        public ICollection<PnpSales> Sales { get; set; }
+
     }
 }

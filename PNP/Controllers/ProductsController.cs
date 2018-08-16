@@ -28,7 +28,7 @@ namespace PNP.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Products products = db.Products.Find(id);
+            PnpProducts products = db.Products.Find(id);
             if (products == null)
             {
                 return HttpNotFound();
@@ -48,7 +48,7 @@ namespace PNP.Controllers
         [HttpPost]
         public ActionResult Index(FormCollection fc, HttpPostedFileBase file)
         {
-            Products tbl = new Products();
+            PnpProducts tbl = new PnpProducts();
             var allowedExtensions = new[] {
             ".Jpg", ".png", ".jpg", "jpeg"
         };
@@ -82,7 +82,7 @@ namespace PNP.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo,productPrice")] Products products)
+        public ActionResult Create([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo,productPrice")] PnpProducts products)
         {
             if (ModelState.IsValid)
             {
@@ -101,7 +101,7 @@ namespace PNP.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Products products = db.Products.Find(id);
+            PnpProducts products = db.Products.Find(id);
             if (products == null)
             {
                 return HttpNotFound();
@@ -114,7 +114,7 @@ namespace PNP.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo,productPrice")] Products products)
+        public ActionResult Edit([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo,productPrice")] PnpProducts products)
         {
             if (ModelState.IsValid)
             {
@@ -132,7 +132,7 @@ namespace PNP.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Products products = db.Products.Find(id);
+            PnpProducts products = db.Products.Find(id);
             if (products == null)
             {
                 return HttpNotFound();
@@ -145,7 +145,7 @@ namespace PNP.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Products products = db.Products.Find(id);
+            PnpProducts products = db.Products.Find(id);
             db.Products.Remove(products);
             db.SaveChanges();
             return RedirectToAction("Index");

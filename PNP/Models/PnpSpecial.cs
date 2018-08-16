@@ -19,6 +19,8 @@ namespace PNP.Models
         [Display(Name = "End Date")]
         public DateTime pnpEndDate { get; set; }
 
+        public ICollection<PnpSales> Sales { get; set; }
+
 
 
 

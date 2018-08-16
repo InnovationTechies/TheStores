@@ -20,5 +20,7 @@ namespace PNP.Models
         public string pnpLocationCodeAddress { get; set; }
         [Display(Name = "Co-ordinates Location")]
         public string pnpLocationCoordinates { get; set; }
+
+        public ICollection<PnpSales> Sales { get; set; }
     }
 }

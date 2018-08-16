@@ -171,10 +171,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201808160734111_thebind.cs" />
-    <Compile Include="Migrations\201808160734111_thebind.Designer.cs">
-      <DependentUpon>201808160734111_thebind.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PNPContext.cs" />
     <Compile Include="Models\PnpEmployee.cs" />
@@ -183,7 +179,7 @@
     <Compile Include="Models\PnpSales.cs" />
     <Compile Include="Models\PnpSpecial.cs" />
     <Compile Include="Models\ProductCatagory.cs" />
-    <Compile Include="Models\Products.cs" />
+    <Compile Include="Models\PnpProducts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -263,11 +259,6 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808160734111_thebind.resx">
-      <DependentUpon>201808160734111_thebind.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

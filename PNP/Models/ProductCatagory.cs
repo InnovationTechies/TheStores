@@ -14,5 +14,7 @@ namespace PNP.Models
         public string catagoryName { get; set; }
         [Display(Name = "Description")]
         public string catagoryDesc { get; set; }
+
+        public ICollection<PnpProducts> Products { get; set; }
     }
 }
