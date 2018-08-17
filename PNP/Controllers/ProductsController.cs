@@ -53,8 +53,8 @@ namespace PNP.Controllers
             ".Jpg", ".png", ".jpg", "jpeg"
         };
 
-            tbl.productName = fc["productName"].ToString();
-            tbl.productImage = file.ToString(); //getting complete url  
+            tbl.ProductName = fc["productName"].ToString();
+            tbl.ProductImage = file.ToString(); //getting complete url  
             //tbl.Name = fc["Name"].ToString();
 
             var fileName = Path.GetFileName(file.FileName); //getting only file name(ex-ganesh.jpg)  
@@ -62,10 +62,10 @@ namespace PNP.Controllers
             if (allowedExtensions.Contains(ext)) //check what type of extension  
             {
                 string name = Path.GetFileNameWithoutExtension(fileName); //getting file name without extension  
-                string myfile = name + "_" + tbl.productID + ext; //appending the name with id  
+                string myfile = name + "_" + tbl.ProductID + ext; //appending the name with id  
                                                            // store the file inside ~/project folder(Img)  
                 var path = Path.Combine(Server.MapPath("~/Img"), myfile);
-                tbl.productImage = path;
+                tbl.ProductImage = path;
                 db.Products.Add(tbl);
                 db.SaveChanges();
                 file.SaveAs(path);

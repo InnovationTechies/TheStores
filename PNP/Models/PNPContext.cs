@@ -24,7 +24,7 @@ namespace PNP.Models
         public System.Data.Entity.DbSet<PNP.Models.PnpProducts> Products { get; set; }
         public System.Data.Entity.DbSet<PNP.Models.PnpEmployee> Employees { get; set; }
         public System.Data.Entity.DbSet<PNP.Models.PnpManager> Managers { get; set; }
-        public System.Data.Entity.DbSet<PNP.Models.PnpProducts> Sales { get; set; }
+        public System.Data.Entity.DbSet<PNP.Models.PnpSales> Sales { get; set; }
         public System.Data.Entity.DbSet<PNP.Models.PnpSpecial> Specials { get; set; }
         public System.Data.Entity.DbSet<PNP.Models.PnpLocation> Locations { get; set; }
         public System.Data.Entity.DbSet<PNP.Models.ProductCatagory> ProductCatagories { get; set; }

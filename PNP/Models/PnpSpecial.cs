@@ -9,17 +9,17 @@ namespace PNP.Models
     public class PnpSpecial
     {
         [Key]
-        public int pnpSpecialID { get; set; }
+        public int PnpSpecialID { get; set; }
         [Display(Name = "Name")]
-        public string pnpSpecialName { get; set; }
+        public string PnpSpecialName { get; set; }
         [Display(Name = "Description")]
-        public string pnpSpecialDesc { get; set; }
-        [Display(Name = "Start Date")]
-        public DateTime pnpStartDate { get; set; }
-        [Display(Name = "End Date")]
-        public DateTime pnpEndDate { get; set; }
+        public string PnpSpecialDesc { get; set; }
+        [Display(Name = "StartDate")]
+        public DateTime PnpStartDate { get; set; }
+        [Display(Name = "EndDate")]
+        public DateTime PnpEndDate { get; set; }
 
-        public ICollection<PnpSales> Sales { get; set; }
+        //public ICollection<PnpSales> Sales { get; set; }
 
 
 

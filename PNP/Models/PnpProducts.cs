@@ -9,20 +9,20 @@ namespace PNP.Models
     public class PnpProducts
     {
         [Key]
-        public int productID { get; set; }
+        public int ProductID { get; set; }
 
         [Display(Name = "Name")]
-        public string productName { get; set; }
+        public string ProductName { get; set; }
         [Display(Name = "Price")]
-        public float productPrice { get; set; }
+        public float ProductPrice { get; set; }
         [Display(Name = "Image")]
-        public string productImage { get; set; }
+        public string ProductImage { get; set; }
         [Display(Name = "Percent")]
-        public double productDropPercent { get; set; }
+        public double ProductDropPercent { get; set; }
         [Display(Name = "Description")]
-        public string productDesc { get; set; }
+        public string ProductDesc { get; set; }
         [Display(Name = "Special End Date")]
-        public DateTime productDateEndPromo { get; set; }
+        public DateTime ProductDateEndPromo { get; set; }
         [Display(Name = "Catagory")]
         //public IEnumerable<ProductCatagory> productCatagories { get; set; }
 

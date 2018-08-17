@@ -9,15 +9,15 @@ namespace PNP.Models
     public class PnpManager
     {
         [Key]
-        public int pnpManID { get; set; }
+        public int PnpManID { get; set; }
         [Display(Name = "Name")]
-        public string pnpManName { get; set; }
+        public string PnpManName { get; set; }
         [Display(Name = "Surname")]
-        public string pnpManSurname { get; set; }
+        public string PnpManSurname { get; set; }
         [Display(Name = "Email")]
-        public string pnpManEmail { get; set; }
+        public string PnpManEmail { get; set; }
         [Display(Name = "Password")]
-        public string pnpManPassword { get; set; }
+        public string PnpManPassword { get; set; }
 
         public ICollection<PnpSales> Sales { get; set; }
     }

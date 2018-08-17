@@ -10,20 +10,20 @@ namespace PNP.Models
     {
 
         [Key]
-        public int pnpEmpID { get; set; }
+        public int PnpEmpID { get; set; }
 
         [Display(Name = "Name")]
-        public string pnpEmpName { get; set; }
+        public string PnpEmpName { get; set; }
         [Display(Name = "Surname")]
-        public string pnpEmpSurname { get; set; }
+        public string PnpEmpSurname { get; set; }
         [Display(Name = "Email")]
-        public string pnpEmpEmail { get; set; }
+        public string PnpEmpEmail { get; set; }
         [Display(Name = "Password")]
-        public string pnpPassword { get; set; }
+        public string PnpPassword { get; set; }
         [Display(Name = "Gender")]
-        public string pnpEmpGender { get; set; }
+        public string PnpEmpGender { get; set; }
         [Display(Name = "Date")]
-        public DateTime pnpDateTime { get; set; }
+        public DateTime PnpDateTime { get; set; }
 
         public ICollection<PnpSales> Sales { get; set; }
 

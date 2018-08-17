@@ -17,6 +17,10 @@ namespace PNP.Models
         //public IEnumerable<PnpSpecial> specials { get; set; }
         //public IEnumerable<Products> products { get; set; }
 
+
+            /// <summary>
+            /// Foriegn Keys
+            /// </summary>
         public PnpEmployee Employee { get; set; }
         public PnpLocation Location { get; set; }
         public PnpManager Manager { get; set; }

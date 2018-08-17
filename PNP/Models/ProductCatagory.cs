@@ -11,10 +11,10 @@ namespace PNP.Models
         [Key]
         public int catagoryID { get; set; }
         [Display(Name = "Name")]
-        public string catagoryName { get; set; }
+        public string CatagoryName { get; set; }
         [Display(Name = "Description")]
-        public string catagoryDesc { get; set; }
+        public string CatagoryDesc { get; set; }
 
-        public ICollection<PnpProducts> Products { get; set; }
+        //public ICollection<PnpProducts> Products { get; set; }
     }
 }
