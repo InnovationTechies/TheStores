@@ -171,8 +171,13 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SPARContext.cs" />
+    <Compile Include="Models\SparEmployee.cs" />
+    <Compile Include="Models\SparLocation.cs" />
+    <Compile Include="Models\SparManager.cs" />
     <Compile Include="Models\SparProductCategory.cs" />
     <Compile Include="Models\SparProducts.cs" />
+    <Compile Include="Models\SparSales.cs" />
+    <Compile Include="Models\SparSpecial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
