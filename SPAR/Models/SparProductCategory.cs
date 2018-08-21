@@ -12,7 +12,10 @@ namespace SPAR.Models
     {
         [Key]
         public int CategoryID { get; set; }
+        [Display(Name = "Name")]
         public string CategoryName { get; set; }
+        [Display(Name = "Description")]
         public string CategoryDescription { get; set; }
+        
     }
 }
