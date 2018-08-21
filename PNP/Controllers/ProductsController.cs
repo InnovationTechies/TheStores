@@ -28,7 +28,7 @@ namespace PNP.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Products products = db.Products.Find(id);
+            PnpProducts products = db.Products.Find(id);
             if (products == null)
             {
                 return HttpNotFound();
@@ -48,13 +48,13 @@ namespace PNP.Controllers
         [HttpPost]
         public ActionResult Index(FormCollection fc, HttpPostedFileBase file)
         {
-            Products tbl = new Products();
+            PnpProducts tbl = new PnpProducts();
             var allowedExtensions = new[] {
             ".Jpg", ".png", ".jpg", "jpeg"
         };
 
-            tbl.productName = fc["productName"].ToString();
-            tbl.productImage = file.ToString(); //getting complete url  
+            tbl.ProductName = fc["productName"].ToString();
+            tbl.ProductImage = file.ToString(); //getting complete url  
             //tbl.Name = fc["Name"].ToString();
 
             var fileName = Path.GetFileName(file.FileName); //getting only file name(ex-ganesh.jpg)  
@@ -62,10 +62,10 @@ namespace PNP.Controllers
             if (allowedExtensions.Contains(ext)) //check what type of extension  
             {
                 string name = Path.GetFileNameWithoutExtension(fileName); //getting file name without extension  
-                string myfile = name + "_" + tbl.productID + ext; //appending the name with id  
+                string myfile = name + "_" + tbl.ProductID + ext; //appending the name with id  
                                                            // store the file inside ~/project folder(Img)  
                 var path = Path.Combine(Server.MapPath("~/Img"), myfile);
-                tbl.productImage = path;
+                tbl.ProductImage = path;
                 db.Products.Add(tbl);
                 db.SaveChanges();
                 file.SaveAs(path);
@@ -82,7 +82,7 @@ namespace PNP.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo,productPrice")] Products products)
+        public ActionResult Create([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo,productPrice")] PnpProducts products)
         {
             if (ModelState.IsValid)
             {
@@ -101,7 +101,7 @@ namespace PNP.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Products products = db.Products.Find(id);
+            PnpProducts products = db.Products.Find(id);
             if (products == null)
             {
                 return HttpNotFound();
@@ -114,7 +114,7 @@ namespace PNP.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo,productPrice")] Products products)
+        public ActionResult Edit([Bind(Include = "productID,productName,productImage,productDropPercent,productDesc,productDateEndPromo,productPrice")] PnpProducts products)
         {
             if (ModelState.IsValid)
             {
@@ -132,7 +132,7 @@ namespace PNP.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Products products = db.Products.Find(id);
+            PnpProducts products = db.Products.Find(id);
             if (products == null)
             {
                 return HttpNotFound();
@@ -145,7 +145,7 @@ namespace PNP.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Products products = db.Products.Find(id);
+            PnpProducts products = db.Products.Find(id);
             db.Products.Remove(products);
             db.SaveChanges();
             return RedirectToAction("Index");

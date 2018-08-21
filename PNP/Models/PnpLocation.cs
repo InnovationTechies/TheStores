@@ -9,16 +9,18 @@ namespace PNP.Models
     public class PnpLocation
     {
         [Key]
-        public int pnpLocationID { get; set; }
+        public int PnpLocationID { get; set; }
         [Display(Name = "Store Name")]
-        public string pnpLocationName { get; set; }
+        public string PnpLocationName { get; set; }
         [Display(Name = "Street")]
-        public string pnpLocationStreetAddress { get; set; }
+        public string PnpLocationStreetAddress { get; set; }
         [Display(Name = "Suburb")]
-        public string pnpLocationSuburbAddress { get; set; }
+        public string PnpLocationSuburbAddress { get; set; }
         [Display(Name = "Code")]
-        public string pnpLocationCodeAddress { get; set; }
+        public string PnpLocationCodeAddress { get; set; }
         [Display(Name = "Co-ordinates Location")]
-        public string pnpLocationCoordinates { get; set; }
+        public string PnpLocationCoordinates { get; set; }
+
+        public ICollection<PnpSales> Sales { get; set; }
     }
 }
