@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHECKERS", "CHECKERS\CHECKE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPAR", "SPAR\SPAR.csproj", "{7316C479-D45B-4782-94AA-F576FB591B7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvcTest3", "..\MvcTestMySql\mvcTest3\mvcTest3.csproj", "{DB7CF0B4-F1AC-4CBA-B553-B1CA4B1AEBAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PnpStoreXamApp.Android", "PnpStoreXamApp\PnpStoreXamApp.Android\PnpStoreXamApp.Android.csproj", "{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PnpStoreXamApp", "PnpStoreXamApp\PnpStoreXamApp\PnpStoreXamApp.csproj", "{D8EDD3D9-70C1-4BFE-A01D-BC01EE682F37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +37,16 @@ Global
 		{7316C479-D45B-4782-94AA-F576FB591B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7316C479-D45B-4782-94AA-F576FB591B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7316C479-D45B-4782-94AA-F576FB591B7D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB7CF0B4-F1AC-4CBA-B553-B1CA4B1AEBAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB7CF0B4-F1AC-4CBA-B553-B1CA4B1AEBAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB7CF0B4-F1AC-4CBA-B553-B1CA4B1AEBAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB7CF0B4-F1AC-4CBA-B553-B1CA4B1AEBAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D8EDD3D9-70C1-4BFE-A01D-BC01EE682F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EDD3D9-70C1-4BFE-A01D-BC01EE682F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8EDD3D9-70C1-4BFE-A01D-BC01EE682F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EDD3D9-70C1-4BFE-A01D-BC01EE682F37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
