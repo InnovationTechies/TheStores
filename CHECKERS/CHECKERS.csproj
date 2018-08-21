@@ -183,6 +183,11 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CHECKERSContext.cs" />
+    <Compile Include="Models\CheckersEmployees.cs" />
+    <Compile Include="Models\CheckersLocation.cs" />
+    <Compile Include="Models\CheckersManagers.cs" />
+    <Compile Include="Models\CheckersSales.cs" />
+    <Compile Include="Models\CheckersSpecials.cs" />
     <Compile Include="Models\ProductCategory.cs" />
     <Compile Include="Models\Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
