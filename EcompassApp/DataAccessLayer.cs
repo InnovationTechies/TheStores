@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
 
-namespace TheRealWebCam
+
+
+
+namespace EcompassApp
 {
     public class DataAccessLayer //: IDataAccessLayer
     {
@@ -26,23 +30,51 @@ namespace TheRealWebCam
         {
         }
 
-        public bool InsertPicture(Picture pic)
-        {
-            DBHelper myDB = new DBHelper();
-            bool myBool = false;
+        //public void ConnectDB()
+        //{
+        //    var user = User.Text;
+        //    var pass = Pass.Text;
+        //    try
+        //    {
 
-            string command = "uspInsertPicture";
+        //        var postData = new List<KeyValuePair<string, string>>();
+        //        postData.Add(new KeyValuePair<string, string>("username", user));
+        //        postData.Add(new KeyValuePair<string, string>("password", pass));
 
-            SqlParameter[] param = new SqlParameter[]{
+        //        var content = new FormUrlEncodedContent(postData);
 
-                new SqlParameter ("@Image", pic.Image),
-                new SqlParameter ("@Name", pic.Name)
+        //        HttpClient client = new HttpClient();
 
-            };
-            //param.ToArray<emp>();
-            myBool = myDB.ExecuteNonQuery(command, CommandType.StoredProcedure, param);
-            return myBool;
-        }
+        //        client.BaseAddress = new Uri("Http://*.*.*.*:81");
+
+        //        var response = await client.PostAsync("Http://*.*.*.*:81/Cinfo.php", content);
+        //        result = response.Content.ReadAsStringAsync().Result;
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        await DisplayAlert("Error", ex.ToString(), "Ok");
+        //        return;
+        //    }
+        //}
+
+        //public bool InsertPicture(Picture pic)
+        //{
+        //    DBHelper myDB = new DBHelper();
+        //    bool myBool = false;
+
+        //    string command = "uspInsertPicture";
+
+        //    SqlParameter[] param = new SqlParameter[]{
+
+        //        new SqlParameter ("@Image", pic.Image),
+        //        new SqlParameter ("@Name", pic.Name)
+
+        //    };
+        //    //param.ToArray<emp>();
+        //    myBool = myDB.ExecuteNonQuery(command, CommandType.StoredProcedure, param);
+        //    return myBool;
+        //}
 
         //public bool UpdateCalendar(CalendarAppointment cal)
         //{
