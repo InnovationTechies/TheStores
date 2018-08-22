@@ -11,9 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHECKERS", "CHECKERS\CHECKE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPAR", "SPAR\SPAR.csproj", "{7316C479-D45B-4782-94AA-F576FB591B7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PnpStoreXamApp.Android", "PnpStoreXamApp\PnpStoreXamApp.Android\PnpStoreXamApp.Android.csproj", "{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PnpStoreXamApp", "PnpStoreXamApp\PnpStoreXamApp\PnpStoreXamApp.csproj", "{D8EDD3D9-70C1-4BFE-A01D-BC01EE682F37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcompassApp", "EcompassApp\EcompassApp.csproj", "{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,15 +31,12 @@ Global
 		{7316C479-D45B-4782-94AA-F576FB591B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7316C479-D45B-4782-94AA-F576FB591B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7316C479-D45B-4782-94AA-F576FB591B7D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4B68637-5EDA-41A6-B641-D3CE4EE928DF}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{D8EDD3D9-70C1-4BFE-A01D-BC01EE682F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8EDD3D9-70C1-4BFE-A01D-BC01EE682F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8EDD3D9-70C1-4BFE-A01D-BC01EE682F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8EDD3D9-70C1-4BFE-A01D-BC01EE682F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

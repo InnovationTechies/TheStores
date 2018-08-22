@@ -9,13 +9,13 @@ using System.Data.SqlClient;
 using System.Configuration;
 
 
-namespace PnpStoreXamApp.Droid
+namespace TheRealWebCam
 {
     public class DBHelper
     {
 
         //Fix the connection string
-        private string connString = ConfigurationManager.ConnectionStrings["PNPContext"].ConnectionString;
+        private string connString = ConfigurationManager.ConnectionStrings["theConnWeb"].ConnectionString;
 
 
 
@@ -159,4 +159,3 @@ namespace PnpStoreXamApp.Droid
 
 }
 
- 
