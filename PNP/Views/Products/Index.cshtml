@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PNP.Models.Products>
+﻿@model IEnumerable<PNP.Models.PnpProducts>
 
 @{
     ViewBag.Title = "Index";
@@ -89,22 +89,22 @@
                     <div class="col-lg-4 col-md-6 mb-4" style="padding:1% 1% 1% 1%">
                         <div class="card h-100 list-group-item" style="padding: 5% 5% 5% 5%; border-radius:0%">
                             <a href="#">
-                                <img class="card-img-top" src="@Url.Content(item.productImage)" alt="Product Image" height="60%" width="60%" />
+                                <img class="card-img-top" src="@Url.Content(item.ProductImage)" alt="Product Image" height="60%" width="60%" />
                             </a>
                             <div class="card-body">
                                 <h3 class="card-title">
-                                    <a href="#">@Html.DisplayFor(modelItem => item.productName)</a>
+                                    <a href="#">@Html.DisplayFor(modelItem => item.ProductName)</a>
 
                                 </h3>
                                 <h4>
-                                    R @Html.DisplayFor(modelItem => item.productPrice)
+                                    R @Html.DisplayFor(modelItem => item.ProductPrice)
                                 </h4>
                                 <p class="card-text">
-                                    @Html.DisplayFor(modelItem => item.productDesc)
+                                    @Html.DisplayFor(modelItem => item.ProductDesc)
                                     <br />
                                     @*@Html.DisplayFor(modelItem => item.productDateEndPromo)
                                     <br />*@
-                                    @Html.DisplayFor(modelItem => item.productCatagories)
+                                    @Html.DisplayFor(modelItem => item.Catagory)
                                 </p>
                             </div>
                             <div class="card-footer">

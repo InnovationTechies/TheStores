@@ -10,7 +10,7 @@ namespace PNP.Models
     {
         [Key]
         public int PnpLocationID { get; set; }
-        [Display(Name = "Store Name")]
+        [Display(Name = "StoreName")]
         public string PnpLocationName { get; set; }
         [Display(Name = "Street")]
         public string PnpLocationStreetAddress { get; set; }
@@ -18,9 +18,9 @@ namespace PNP.Models
         public string PnpLocationSuburbAddress { get; set; }
         [Display(Name = "Code")]
         public string PnpLocationCodeAddress { get; set; }
-        [Display(Name = "Co-ordinates Location")]
+        [Display(Name = "CoordinatesLocation")]
         public string PnpLocationCoordinates { get; set; }
 
-        public ICollection<PnpSales> Sales { get; set; }
+        //public ICollection<PnpSales> Sales { get; set; }
     }
 }

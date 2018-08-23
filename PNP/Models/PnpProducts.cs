@@ -21,14 +21,14 @@ namespace PNP.Models
         public double ProductDropPercent { get; set; }
         [Display(Name = "Description")]
         public string ProductDesc { get; set; }
-        [Display(Name = "Special End Date")]
+        [Display(Name = "SpecialEndDate")]
         public DateTime ProductDateEndPromo { get; set; }
         [Display(Name = "Catagory")]
         //public IEnumerable<ProductCatagory> productCatagories { get; set; }
 
         public ProductCatagory Catagory { get; set; }
 
-        public ICollection<PnpSales> Sales { get; set; }
+        //public ICollection<PnpSales> Sales { get; set; }
 
         //public List<ProductCatagory> productCatagoy { get; set; }
 

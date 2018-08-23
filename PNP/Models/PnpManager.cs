@@ -19,6 +19,6 @@ namespace PNP.Models
         [Display(Name = "Password")]
         public string PnpManPassword { get; set; }
 
-        public ICollection<PnpSales> Sales { get; set; }
+        //public ICollection<PnpSales> Sales { get; set; }
     }
 }

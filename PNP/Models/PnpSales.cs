@@ -10,17 +10,7 @@ namespace PNP.Models
     {
         [Key]
         public int PnpSalesID { get; set; }
-
-        //public IEnumerable<PnpEmployee> employees { get; set; }
-        //public IEnumerable<PnpLocation> locations { get; set; }
-        //public IEnumerable<PnpManager> managers { get; set; }
-        //public IEnumerable<PnpSpecial> specials { get; set; }
-        //public IEnumerable<Products> products { get; set; }
-
-
-            /// <summary>
-            /// Foriegn Keys
-            /// </summary>
+        //Fkeys
         public PnpEmployee Employee { get; set; }
         public PnpLocation Location { get; set; }
         public PnpManager Manager { get; set; }
