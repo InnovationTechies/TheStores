@@ -24,17 +24,27 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/say_hello_ecompass" />
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/imageView1" />
-            <Button
+                android:id="@+id/sayHelloTextView" />
+			<Button
                 android:text="Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/get" />
+                android:id="@+id/say_hello_ecompass" />
+
+			
         </LinearLayout>
+			<Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/get_hello_products_data" />
+		        <ListView
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/listProducts" />
+
+	
     </RelativeLayout>
 </RelativeLayout>
