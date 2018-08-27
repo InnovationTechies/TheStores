@@ -111,9 +111,11 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\e_compass.JPG" />
     <Content Include="Resources\Images\basins.jpg" />
     <Content Include="Resources\Images\bread.png" />
     <Content Include="Resources\Images\chocolate.jpg" />
+    <AndroidResource Include="Resources\Images\e_compass.JPG" />
     <Content Include="Resources\Images\glass.png" />
     <Content Include="Resources\Images\H1_Standalone_Page_01_03.jpg" />
     <Content Include="Resources\Images\imgres.htm" />
@@ -138,6 +140,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.
