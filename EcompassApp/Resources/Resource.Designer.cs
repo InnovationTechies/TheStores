@@ -2869,8 +2869,11 @@ namespace EcompassApp
 			
 			// aapt resource value: 0x7f08002e
 			public const int wrap_content = 2131230766;
-			
-			static Id()
+            internal static int btnLogin;
+            internal static int txtUsername;
+            internal static int txtPassword;
+
+            static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
