@@ -24,7 +24,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/textView1" />
+                android:id="@+id/say_hello_ecompass" />
             <ImageView
                 android:src="@android:drawable/ic_menu_gallery"
                 android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
                 android:text="Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/button1" />
+                android:id="@+id/get" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

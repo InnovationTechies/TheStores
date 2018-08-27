@@ -2681,6 +2681,9 @@ namespace EcompassApp
 			// aapt resource value: 0x7f08000e
 			public const int save_scale_type = 2131230734;
 			
+			// aapt resource value: 0x7f08008d
+			public const int say_hello_ecompass = 2131230861;
+			
 			// aapt resource value: 0x7f080029
 			public const int screen = 2131230761;
 			
@@ -2800,9 +2803,6 @@ namespace EcompassApp
 			
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
-			
-			// aapt resource value: 0x7f08008d
-			public const int textView1 = 2131230861;
 			
 			// aapt resource value: 0x7f08009d
 			public const int text_input_password_toggle = 2131230877;
@@ -3261,6 +3261,9 @@ namespace EcompassApp
 			// aapt resource value: 0x7f090020
 			public const int character_counter_pattern = 2131296288;
 			
+			// aapt resource value: 0x7f09002a
+			public const int get_hello_products_data = 2131296298;
+			
 			// aapt resource value: 0x7f090021
 			public const int password_toggle_content_description = 2131296289;
 			
@@ -3275,6 +3278,9 @@ namespace EcompassApp
 			
 			// aapt resource value: 0x7f090025
 			public const int path_password_strike_through = 2131296293;
+			
+			// aapt resource value: 0x7f090029
+			public const int say_hello_ecompass = 2131296297;
 			
 			// aapt resource value: 0x7f090011
 			public const int search_menu_title = 2131296273;

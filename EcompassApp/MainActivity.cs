@@ -3,6 +3,10 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using System.Collections.Generic;
+using System.Net.Http;
+using System;
+using System.ServiceModel;
 
 namespace EcompassApp
 {
@@ -14,6 +18,11 @@ namespace EcompassApp
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+
+
+
+
         }
     }
 }
