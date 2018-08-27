@@ -126,6 +126,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EcompassServiceProxy\EcompassServiceProxy.csproj">
+      <Project>{e05e20dd-b03e-4122-adc4-22b28a6d279e}</Project>
+      <Name>EcompassServiceProxy</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.
