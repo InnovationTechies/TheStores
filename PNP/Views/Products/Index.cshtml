@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PNP.Models.Products>
+﻿@model IEnumerable<PNP.Models.PnpProducts>
 
 @{
     ViewBag.Title = "Index";
@@ -40,7 +40,7 @@
                     </a>*@
             </div>
             <span></span>
-        </a>
+        </a>    
     </div>
 
 </div>
@@ -49,6 +49,37 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
+
+<nav class="main-navigation js-enquire-offcanvas-navigation ZZnavbar-fixed-top" role="navigation">
+    <ul class="nav nav-pills js-userAccount-Links  js-nav-collapse-body  offcanvasGroup1 mobileNavLinks collapse in hidden-md hidden-lg" data-trigger="#signedInUserOptionsToggle"></ul>
+    <ul class="nav nav-pills js-offcanvas-links container">
+        <li class="auto has-sub js-enquire-has-sub">
+            <a title="SHOP BY AISLE" href="/pnpstorefront/pnp/en/All-Products/c/pnpbase">SHOP BY AISLE</a><div class="sub-navigation " style="left: 0px; top: 47px; right: auto;">
+            
+            </div>
+        </li>
+        <li class=" auto">
+            <a title="SPECIALS" href="/pnpstorefront/pnp/en/pnpbase/c/pnpbase?q=%3Arelevance%3AisOnPromotion%3AOn+Promotion&amp;text=&amp;pageSize=18#">SPECIALS</a>
+        </li>
+        <li class=" auto has-sub js-enquire-has-sub">
+            <a title="INSPIRATION &amp; OCCASIONS" href="/pnpstorefront/pnp/en/inspiration-and-occasions">INSPIRATION &amp; OCCASIONS</a><div class="sub-navigation ">
+              
+
+               
+
+            </div>
+        </li>
+        <li class=" auto">
+            <a title="CLEARANCE SALE" href="/pnpstorefront/pnp/en/clearance-sale">CLEARANCE SALE</a>
+        </li>
+        <li class=" auto">
+            <a title="RECIPES" href="/pnpstorefront/pnp/en/all-recipes">RECIPES</a>
+        </li>
+        <li class=" auto">
+            <a title="IN-STORE CATALOGUES" href="/pnpstorefront/pnp/en/catalogues">IN-STORE CATALOGUES</a>
+        </li>
+    </ul>
+</nav>
 <div class="container">
     <div class="row">
         <div class="col-lg-9">
@@ -58,22 +89,22 @@
                     <div class="col-lg-4 col-md-6 mb-4" style="padding:1% 1% 1% 1%">
                         <div class="card h-100 list-group-item" style="padding: 5% 5% 5% 5%; border-radius:0%">
                             <a href="#">
-                                <img class="card-img-top" src="@Url.Content(item.productImage)" alt="Product Image" height="60%" width="60%" />
+                                <img class="card-img-top" src="@Url.Content(item.ProductImage)" alt="Product Image" height="60%" width="60%" />
                             </a>
                             <div class="card-body">
                                 <h3 class="card-title">
-                                    <a href="#">@Html.DisplayFor(modelItem => item.productName)</a>
+                                    <a href="#">@Html.DisplayFor(modelItem => item.ProductName)</a>
 
                                 </h3>
                                 <h4>
-                                    R @Html.DisplayFor(modelItem => item.productPrice)
+                                    R @Html.DisplayFor(modelItem => item.ProductPrice)
                                 </h4>
                                 <p class="card-text">
-                                    @Html.DisplayFor(modelItem => item.productDesc)
+                                    @Html.DisplayFor(modelItem => item.ProductDesc)
                                     <br />
                                     @*@Html.DisplayFor(modelItem => item.productDateEndPromo)
                                     <br />*@
-                                    @Html.DisplayFor(modelItem => item.productCatagories)
+                                    @Html.DisplayFor(modelItem => item.Catagory)
                                 </p>
                             </div>
                             <div class="card-footer">

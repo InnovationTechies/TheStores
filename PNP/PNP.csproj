@@ -73,6 +73,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
@@ -164,20 +165,25 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Controllers\ProductCatagoriesController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201808102157479_theflow.cs" />
-    <Compile Include="Migrations\201808102157479_theflow.Designer.cs">
-      <DependentUpon>201808102157479_theflow.cs</DependentUpon>
+    <Compile Include="Migrations\201808231214348_fkeys.cs" />
+    <Compile Include="Migrations\201808231214348_fkeys.Designer.cs">
+      <DependentUpon>201808231214348_fkeys.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PNPContext.cs" />
-    <Compile Include="Models\ProductCatagoriesContext.cs" />
+    <Compile Include="Models\PnpEmployee.cs" />
+    <Compile Include="Models\PnpLocation.cs" />
+    <Compile Include="Models\PnpManager.cs" />
+    <Compile Include="Models\PnpSales.cs" />
+    <Compile Include="Models\PnpSpecial.cs" />
     <Compile Include="Models\ProductCatagory.cs" />
-    <Compile Include="Models\Products.cs" />
+    <Compile Include="Models\PnpProducts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -239,6 +245,8 @@
     <Content Include="Views\ProductCatagories\Details.cshtml" />
     <Content Include="Views\ProductCatagories\Edit.cshtml" />
     <Content Include="Views\ProductCatagories\Index.cshtml" />
+    <Content Include="Views\Location\Index.cshtml" />
+    <Content Include="Views\Location\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -257,8 +265,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808102157479_theflow.resx">
-      <DependentUpon>201808102157479_theflow.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201808231214348_fkeys.resx">
+      <DependentUpon>201808231214348_fkeys.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

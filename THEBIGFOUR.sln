@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPAR", "SPAR\SPAR.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcompassApp", "EcompassApp\EcompassApp.csproj", "{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Woolworth_App", "Woolworth_App\Woolworth_App.csproj", "{E3146AE8-36FB-4586-85F7-83A5D478C190}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,12 +31,12 @@ Global
 		{7316C479-D45B-4782-94AA-F576FB591B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7316C479-D45B-4782-94AA-F576FB591B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7316C479-D45B-4782-94AA-F576FB591B7D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E3146AE8-36FB-4586-85F7-83A5D478C190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3146AE8-36FB-4586-85F7-83A5D478C190}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3146AE8-36FB-4586-85F7-83A5D478C190}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{E3146AE8-36FB-4586-85F7-83A5D478C190}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3146AE8-36FB-4586-85F7-83A5D478C190}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E3146AE8-36FB-4586-85F7-83A5D478C190}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

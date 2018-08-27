@@ -1,4 +1,4 @@
-﻿@model PNP.Models.Products
+﻿@model PNP.Models.PnpProducts
 
 @{
     ViewBag.Title = "Create";
@@ -16,64 +16,69 @@
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     <div class="form-group">
-        @Html.LabelFor(model => model.productName, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.productName, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.productName, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
         </div>
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.productImage, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.ProductImage, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.productImage, new { htmlAttributes = new { @class = "form-control-file", @type = "file", @name = "file" } })
-            @Html.ValidationMessageFor(model => model.productImage, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model.ProductImage, new { htmlAttributes = new { @class = "form-control-file", @type = "file", @name = "file", @accept = "~/Images/*", @onchange = "previewImage(event)" } })
+            @Html.ValidationMessageFor(model => model.ProductImage, "", new { @class = "text-danger" })
+
+            <img src="~/Images/bread.png"
+                 alt="" id="instrumentImage"
+                 class="img-thumbnail" width="280" />
+
         </div>
     </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.productCatagories, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.DropDownList("ProductCatagory", ViewData["ProductCatagory"] as List<SelectListItem>)
-            @*@Html.EditorFor(model => model.productCatagories, )*@
-            @Html.ValidationMessageFor(model => model.productCatagories, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
+   
 
 
     <div class="form-group">
-        @Html.LabelFor(model => model.productPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Catagory, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.productPrice, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.productPrice, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.productDropPercent, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.productDropPercent, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.productDropPercent, "", new { @class = "text-danger" })
+            @*@Html.DropDownList("ProductCatagory", ViewData["ProductCatagory"] as List<SelectListItem>)*@
+            @Html.EditorFor(model => model.Catagory, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Catagory, "", new { @class = "text-danger" })
         </div>
     </div>
 
 
 
-
     <div class="form-group">
-        @Html.LabelFor(model => model.productDesc, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.ProductPrice, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.productDesc, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.productDesc, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model.ProductPrice, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ProductPrice, "", new { @class = "text-danger" })
         </div>
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.productDateEndPromo, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.ProductDropPercent, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.productDateEndPromo, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.productDateEndPromo, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model.ProductDropPercent, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ProductDropPercent, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ProductDesc, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.ProductDesc, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ProductDesc, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ProductDateEndPromo, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.ProductDateEndPromo, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ProductDateEndPromo, "", new { @class = "text-danger" })
         </div>
     </div>
 
@@ -83,6 +88,8 @@
         </div>
     </div>
 </div>
+
+
 }
 
 <div>
@@ -91,4 +98,16 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+
 }
+<script>
+    
+function previewImage(event) {
+    // Get a reference to the image element
+    var image = document.querySelector("#instrumentImage");
+    // Set its source to the file in the <input type=file element
+    image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+</script>

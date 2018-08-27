@@ -171,8 +171,13 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SPARContext.cs" />
+    <Compile Include="Models\SparEmployee.cs" />
+    <Compile Include="Models\SparLocation.cs" />
+    <Compile Include="Models\SparManager.cs" />
     <Compile Include="Models\SparProductCategory.cs" />
     <Compile Include="Models\SparProducts.cs" />
+    <Compile Include="Models\SparSales.cs" />
+    <Compile Include="Models\SparSpecial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -189,12 +194,16 @@
     <Content Include="Images\2018_Win_A_Car.jpg" />
     <Content Include="Images\Baby oil.jfif" />
     <Content Include="Images\beef.jfif" />
+    <Content Include="Images\Budwe.jfif" />
     <Content Include="Images\Budweirs.jfif" />
+    <Content Include="Images\cake.jfif" />
     <Content Include="Images\download %283%29.jfif" />
     <Content Include="Images\fritos.jfif" />
+    <Content Include="Images\Header.jpg" />
     <Content Include="Images\images %2813%29.jfif" />
     <Content Include="Images\oros.jfif" />
     <Content Include="Images\race-banner-2.jpg" />
+    <Content Include="Images\rewards_banner.jpg" />
     <Content Include="Images\Sasko.jfif" />
     <Content Include="Images\SPAR_Home_Desktop_Banner-2.jpg" />
     <Content Include="Images\SPAR_Logo_1.jpg" />
