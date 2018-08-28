@@ -125,6 +125,7 @@
     <AndroidResource Include="Resources\layout\activity_location.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\Menu\menu_main.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EcompassServiceProxy\EcompassServiceProxy.csproj">

@@ -23,8 +23,10 @@ namespace EcompassApp
 		{
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
-		
-		public static void UpdateIdValues()
+
+        public static object Menu { get; internal set; }
+
+        public static void UpdateIdValues()
 		{
 		}
 		
