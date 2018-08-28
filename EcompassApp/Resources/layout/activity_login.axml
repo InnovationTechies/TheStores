@@ -40,7 +40,7 @@
         android:id="@+id/textView1"
         android:textColor="@android:color/holo_green_dark" />
     <Button
-        android:text="Login with Facebook "
+        android:text="Facebook "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -52,7 +52,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
     <Button
-        android:text="Login with Twitter"
+        android:text=" Twitter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -64,7 +64,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
     <Button
-        android:text="Login with Instagram"
+        android:text="Instagram"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -76,7 +76,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
     <Button
-        android:text="Login with Google"
+        android:text="Google"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"

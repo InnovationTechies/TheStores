@@ -51,11 +51,13 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity1.cs" />
     <Compile Include="DataAccessLayer.cs" />
     <Compile Include="DBHelper.cs" />
     <Compile Include="MainActivity.cs" />
@@ -111,22 +113,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\e_compass.JPG" />
-    <Content Include="Resources\Images\basins.jpg" />
-    <Content Include="Resources\Images\bread.png" />
-    <Content Include="Resources\Images\chocolate.jpg" />
-    <AndroidResource Include="Resources\Images\e_compass.JPG" />
-    <Content Include="Resources\Images\glass.png" />
-    <Content Include="Resources\Images\H1_Standalone_Page_01_03.jpg" />
-    <Content Include="Resources\Images\imgres.htm" />
-    <Content Include="Resources\Images\parts.png" />
-    <Content Include="Resources\Images\PICK-N-PAY-LOGO-HIRES-2.jpg" />
-    <Content Include="Resources\Images\pick-n-pay-marathon1.jpg" />
-    <Content Include="Resources\Images\pnp-logo-inspired-by-you.jpg" />
-    <Content Include="Resources\Images\pnp.ico" />
-    <Content Include="Resources\Images\PNP.JPG" />
-    <Content Include="Resources\Images\tablets.png" />
-    <Content Include="Resources\Images\veg.jpg" />
     <AndroidResource Include="Resources\layout\activity_login.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -141,7 +127,12 @@
     </AndroidResource>
     <AndroidResource Include="Resources\Menu\menu_main.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\EcompassServiceProxy\EcompassServiceProxy.csproj">
+      <Project>{e05e20dd-b03e-4122-adc4-22b28a6d279e}</Project>
+      <Name>EcompassServiceProxy</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.
