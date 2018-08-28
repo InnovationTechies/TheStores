@@ -30,7 +30,7 @@ namespace EcompassApp
 
         private void btnLogin_Click(object sender,System. EventArgs e)
         {
-            if (txtUsername.Text == "software" && txtPassword.Text == "development")
+            if (txtUsername.Text == "software" && txtPassword.Text == "dev")
             {
                 StartActivity(typeof(Activity1));
 
