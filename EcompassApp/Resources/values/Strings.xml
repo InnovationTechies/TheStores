@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">EcompassApp</string>
     <string name="action_settings">Settings</string>
+
+<string name="say_hello_ecompass">Hello Ecompass</string>
+<string name="get_hello_products_data">Hello World data</string>
 </resources>

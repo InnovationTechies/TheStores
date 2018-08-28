@@ -24,17 +24,32 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/textView1" />
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/imageView1" />
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/button1" />
+                android:id="@+id/sayHelloTextView" />
+			<Button
+				android:text="Button"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/say_hello_ecompass"
+				android:clickable="true"
+				android:onClick="GetHelloWorldDataButtonOnClick" />
+			<Button
+				android:text="Button"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/get_hello_products_data"
+				android:clickable="true"
+				android:onClick="@string/get_hello_products_data" />
+
+		        <ListView
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/listProducts" />
+
+			
         </LinearLayout>
+			
+	
     </RelativeLayout>
 </RelativeLayout>
