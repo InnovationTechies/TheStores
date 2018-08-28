@@ -13,6 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPAR", "SPAR\SPAR.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcompassApp", "EcompassApp\EcompassApp.csproj", "{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcompassService", "StoresService\EcompassService.csproj", "{8DC3FB25-9657-4D75-A37D-9A82B9A8D8C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcompassServiceProxy", "EcompassServiceProxy\EcompassServiceProxy.csproj", "{E05E20DD-B03E-4122-ADC4-22B28A6D279E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8DC3FB25-9657-4D75-A37D-9A82B9A8D8C2} = {8DC3FB25-9657-4D75-A37D-9A82B9A8D8C2}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +44,14 @@ Global
 		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{95ABBC83-6A69-4595-9602-7FA4CC5E5A5D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8DC3FB25-9657-4D75-A37D-9A82B9A8D8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC3FB25-9657-4D75-A37D-9A82B9A8D8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC3FB25-9657-4D75-A37D-9A82B9A8D8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC3FB25-9657-4D75-A37D-9A82B9A8D8C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05E20DD-B03E-4122-ADC4-22B28A6D279E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05E20DD-B03E-4122-ADC4-22B28A6D279E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05E20DD-B03E-4122-ADC4-22B28A6D279E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05E20DD-B03E-4122-ADC4-22B28A6D279E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
