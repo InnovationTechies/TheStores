@@ -272,10 +272,10 @@ namespace EcompassServiceProxy.EcompassServiceProxy {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class EcompassServiceClient : System.ServiceModel.ClientBase<EcompassServiceProxy.IEcompassService>, EcompassServiceProxy.IEcompassService {
         
-        public EcompassServiceClient() {
+        public EcompassServiceClient(System.ServiceModel.BasicHttpBinding binding1, System.ServiceModel.BasicHttpBinding binding) {
         }
         
-        public EcompassServiceClient(string endpointConfigurationName) : 
+        public EcompassServiceClient(System.ServiceModel.BasicHttpBinding binding, string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         

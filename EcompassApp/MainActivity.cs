@@ -6,18 +6,19 @@ using Android.Widget;
 using System.ServiceModel;
 
 using EcompassServiceProxy.EcompassServiceProxy;
+using System;
 
 namespace EcompassApp
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        static readonly EndpointAddress Endpoint = new EndpointAddress("<insert_WCF_service_endpoint_here>");
+        static readonly EndpointAddress Endpoint = new EndpointAddress("<>");
 
         /// <summary>
         /// get service references
         /// </summary>
-        EcompassServiceClient _client;
+        //EcompassServiceClient _client;
         Button _getHelloWorldDataButton;
         TextView _getHelloWorldDataTextView;
         Button _sayHelloWorldButton;
@@ -46,12 +47,12 @@ namespace EcompassApp
 
             // This button will invoke the GetHelloWorldData - the method that takes a C# object as a parameter.
             _getHelloWorldDataButton = FindViewById<Button>(Resource.Id.get_hello_products_data);
-            _getHelloWorldDataButton.Click += GetHelloWorldDataButtonOnClick;
+           // _getHelloWorldDataButton.Click += GetHelloWorldDataButtonOnClick;
             _getHelloWorldDataTextView = FindViewById<TextView>(Resource.Id.listProducts);
 
             // This button will invoke SayHelloWorld - this method takes a simple string as a parameter.
             _sayHelloWorldButton = FindViewById<Button>(Resource.Id.say_hello_ecompass);
-            _sayHelloWorldButton.Click += SayHelloWorldButtonOnClick;
+            //_sayHelloWorldButton.Click += SayHelloWorldButtonOnClick;
             _sayHelloWorldTextView = FindViewById<TextView>(Resource.Id.sayHelloTextView);
 
         }
@@ -59,7 +60,7 @@ namespace EcompassApp
         void InitializeEcompassServiceClient()
         {
             BasicHttpBinding binding = CreateBasicHttpBinding();
-            _client = new EcompassServiceClient(binding, Endpoint);
+            //_client = new EcompassServiceClient(binding, Endpoint);
         }
 
         static BasicHttpBinding CreateBasicHttpBinding()
