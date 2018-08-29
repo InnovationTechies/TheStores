@@ -26,6 +26,8 @@ namespace EcompassApp
 
 
         private Button btnLogin;
+        private Button btnSpecials;
+        private Button btnLocation;
         private EditText txtUsername;
         private EditText txtPassword;
         public object ToastLenght { get; private set; }
@@ -39,6 +41,8 @@ namespace EcompassApp
             btnLogin = FindViewById<Button>(Resource.Id.btnLogin);
             txtUsername = FindViewById<EditText>(Resource.Id.txtUsername);
             txtPassword = FindViewById<EditText>(Resource.Id.txtPassword);
+
+            btnLocation = FindViewById<Button>(Resource.Id.)
 
             btnLogin.Click += btnLogin_Click;
 
