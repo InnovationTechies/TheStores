@@ -1,9 +1,7 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Support.V7.App;
-using Android.Runtime;
 using Android.Widget;
-using System.Net.Http;
+
 using System;
 using System.Collections.Generic;
 using ServiceProxy.EcompassServiceProxy;
@@ -15,7 +13,6 @@ namespace EcompassApp
     public class MainActivity : Activity
     {
         static readonly EndpointAddress Endpoint = new EndpointAddress("http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/");
-
 
         EcompassServiceClient _client;
         Button _getHelloWorldDataButton;
@@ -107,7 +104,7 @@ namespace EcompassApp
             };
 
             _getHelloWorldDataTextView.Text = "Waiting for WCF...";
-            PnpProducts result;
+            //PnpProducts result;
             try
             {
                 //result = await _client.GetProductsData();
