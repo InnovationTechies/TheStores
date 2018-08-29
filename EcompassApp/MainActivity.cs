@@ -13,7 +13,7 @@ namespace EcompassApp
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        static readonly EndpointAddress Endpoint = new EndpointAddress("<>");
+        static readonly EndpointAddress Endpoint = new EndpointAddress("http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/");
 
         /// <summary>
         /// get service references
