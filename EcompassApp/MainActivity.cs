@@ -16,9 +16,9 @@ namespace EcompassApp
 
         EcompassServiceClient _client;
         Button _getHelloWorldDataButton;
-        TextView _getHelloWorldDataTextView;
         Button _sayHelloWorldButton;
         TextView _sayHelloWorldTextView;
+        TextView _getHelloWorldDataTextView;
 
 
         private Button btnLogin;
