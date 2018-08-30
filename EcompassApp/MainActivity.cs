@@ -24,6 +24,7 @@ namespace EcompassApp
         private Button btnLogin;
         private Button btnSpecials;
         private Button btnLocation;
+
         private EditText txtUsername;
         private EditText txtPassword;
         public object ToastLenght { get; private set; }
