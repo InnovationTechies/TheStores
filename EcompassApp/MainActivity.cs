@@ -16,9 +16,9 @@ namespace EcompassApp
 
         EcompassServiceClient _client;
         Button _getHelloWorldDataButton;
-        TextView _getHelloWorldDataTextView;
         Button _sayHelloWorldButton;
         TextView _sayHelloWorldTextView;
+        TextView _getHelloWorldDataTextView;
 
 
         private Button btnLogin;
@@ -104,11 +104,11 @@ namespace EcompassApp
             };
 
             _getHelloWorldDataTextView.Text = "Waiting for WCF...";
-            //PnpProducts result;
+            List<PnpProducts> result;
             try
             {
                 //result = await _client.GetProductsData();
-                //_getHelloWorldDataTextView.Text = result.ProductName;
+                //_getHelloWorldDataTextView.Text = result;
             }
             catch (Exception ex)
             {
@@ -121,7 +121,7 @@ namespace EcompassApp
             _sayHelloWorldTextView.Text = "Waiting for WCF...";
             try
             {
-                //var result = await _client.SayHelloToAsync("Kilroy");
+                //var result = await _client.("Kilroy");
                 //_sayHelloWorldTextView.Text = result;
             }
             catch (Exception ex)
