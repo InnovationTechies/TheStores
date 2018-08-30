@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EcompassServiceProxy.EcompassServiceProxy {
+namespace ServiceProxy.EcompassServiceProxy {
     using System.Runtime.Serialization;
     using System;
     
@@ -23,7 +23,7 @@ namespace EcompassServiceProxy.EcompassServiceProxy {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private EcompassServiceProxy.ProductCatagory CatagoryField;
+        private ServiceProxy.EcompassServiceProxy.ProductCatagory CatagoryField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime ProductDateEndPromoField;
@@ -57,7 +57,7 @@ namespace EcompassServiceProxy.EcompassServiceProxy {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public EcompassServiceProxy.ProductCatagory Catagory {
+        public ServiceProxy.EcompassServiceProxy.ProductCatagory Catagory {
             get {
                 return this.CatagoryField;
             }
@@ -251,26 +251,20 @@ namespace EcompassServiceProxy.EcompassServiceProxy {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="EcompassServiceProxy.IEcompassService")]
     public interface IEcompassService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEcompassService/SayHelloTo", ReplyAction="http://tempuri.org/IEcompassService/SayHelloToResponse")]
-        string SayHelloTo();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEcompassService/SayHelloTo", ReplyAction="http://tempuri.org/IEcompassService/SayHelloToResponse")]
-        System.Threading.Tasks.Task<string> SayHelloToAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEcompassService/GetProductsData", ReplyAction="http://tempuri.org/IEcompassService/GetProductsDataResponse")]
+        ServiceProxy.EcompassServiceProxy.PnpProducts[] GetProductsData();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEcompassService/GetProductsData", ReplyAction="http://tempuri.org/IEcompassService/GetProductsDataResponse")]
-        EcompassServiceProxy.PnpProducts[] GetProductsData();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEcompassService/GetProductsData", ReplyAction="http://tempuri.org/IEcompassService/GetProductsDataResponse")]
-        System.Threading.Tasks.Task<EcompassServiceProxy.PnpProducts[]> GetProductsDataAsync();
+        System.Threading.Tasks.Task<ServiceProxy.EcompassServiceProxy.PnpProducts[]> GetProductsDataAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IEcompassServiceChannel : EcompassServiceProxy.IEcompassService, System.ServiceModel.IClientChannel {
+    public interface IEcompassServiceChannel : ServiceProxy.EcompassServiceProxy.IEcompassService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class EcompassServiceClient : System.ServiceModel.ClientBase<EcompassServiceProxy.IEcompassService>, IEcompassService {
+    public partial class EcompassServiceClient : System.ServiceModel.ClientBase<ServiceProxy.EcompassServiceProxy.IEcompassService>, ServiceProxy.EcompassServiceProxy.IEcompassService {
         
         public EcompassServiceClient() {
         }
@@ -291,17 +285,11 @@ namespace EcompassServiceProxy.EcompassServiceProxy {
                 base(binding, remoteAddress) {
         }
         
-        public string SayHelloTo() {
-            return base.Channel.SayHelloTo();
+        public ServiceProxy.EcompassServiceProxy.PnpProducts[] GetProductsData() {
+            return base.Channel.GetProductsData();
         }
         
-        public System.Threading.Tasks.Task<string> SayHelloToAsync() {
-            return base.Channel.SayHelloToAsync();
-        }
-                    return base.Channel.GetProductsData();
-        }
-        
-        public System.Threading.Tasks.Task<EcompassServiceProxy.PnpProducts[]> GetProductsDataAsync() {
+        public System.Threading.Tasks.Task<ServiceProxy.EcompassServiceProxy.PnpProducts[]> GetProductsDataAsync() {
             return base.Channel.GetProductsDataAsync();
         }
     }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="887de01b-46d0-482e-8684-be644660e3b7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="6543b829-351e-48f7-90c8-b95cb4fa5e18" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/?xsd=xsd0" />
+    <MetadataFile FileName="EcompassService.wsdl" MetadataType="Wsdl" ID="112b2e13-fcfa-4d85-89c9-8997bedaed0e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/?wsdl" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="c2008ff6-d901-4279-81a6-eb3c76bbb3ec" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/?xsd=xsd1" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="2db4f7e8-065d-46d0-981b-a0364a7acb90" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/?xsd=xsd2" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="6f36c65d-4166-4705-9ad2-64f60a2321c2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -9,36 +9,57 @@ namespace StoresService
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
 
+    [DataContract]
+    public class HelloWorldData
+    {
+        [DataMember]
+        public bool SayHello { get; set; }
+
+        [DataMember]
+        public string Name { get; set; }
+
+        public HelloWorldData()
+        {
+            Name = "Hello ";
+            SayHello = false;
+        }
+    }
+
+    public class HelloWorldService : IHelloWorldService
+    {
+        public HelloWorldData GetHelloData(HelloWorldData helloWorldData)
+        {
+            if (helloWorldData == null)
+                throw new ArgumentException("helloWorldData");
+
+            if (helloWorldData.SayHello)
+                helloWorldData.Name = "Hello World to {helloWorldData.Name}";
+
+            return helloWorldData;
+        }
+
+        public string SayHelloTo(string name)
+        {
+            return "Hello World to you, {name}";
+        }
+    }
+
+
     public class EcompassService : IEcompassService
     {
         EcompassContext ecompassContext = new EcompassContext();
-        //public string GetData(int value)
-        //{
-        //    return string.Format("You entered: {0}", value);
-        //}
+      
 
-        //public CompositeType GetDataUsingDataContract(CompositeType composite)
-        //{
-        //    if (composite == null)
-        //    {
-        //        throw new ArgumentNullException("composite");
-        //    }
-        //    if (composite.BoolValue)
-        //    {
-        //        composite.StringValue += "Suffix";
-        //    }
-        //    return composite;
-        //}
 
         public List<PnpProducts> GetProductsData()
         {
             return ecompassContext.Products.ToList();
         }
 
-        public string SayHelloTo()
-        {
-            return "Hello World to you, Ecompass";
-        }
+        //public string SayHelloTo()
+        //{
+        //    return "Hello World to you, Ecompass";
+        //}
 
     }
 }
