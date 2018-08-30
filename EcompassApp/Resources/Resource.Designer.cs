@@ -2432,6 +2432,9 @@ namespace EcompassApp
 			// aapt resource value: 0x7f08003d
 			public const int bottom = 2131230781;
 			
+			// aapt resource value: 0x7f08008e
+			public const int btnLocation = 2131230862;
+			
 			// aapt resource value: 0x7f080092
 			public const int btnLogin = 2131230866;
 			
@@ -2448,10 +2451,7 @@ namespace EcompassApp
 			public const int btnLoginTwitter = 2131230869;
 			
 			// aapt resource value: 0x7f08008f
-			public const int button1 = 2131230863;
-			
-			// aapt resource value: 0x7f08008e
-			public const int button2 = 2131230862;
+			public const int btnSpecials = 2131230863;
 			
 			// aapt resource value: 0x7f080063
 			public const int buttonPanel = 2131230819;
