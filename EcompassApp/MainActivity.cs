@@ -39,19 +39,19 @@ namespace EcompassApp
             btnLogin.Click += btnLogin_Click;
 
 
-            InitializeEcompassServiceClient();
+            //InitializeEcompassServiceClient();
 
             // This button will invoke the GetHelloWorldData - the method that takes a C# object as a parameter.
-            _getHelloWorldDataButton = FindViewById<Button>(Resource.Id.getHelloWorldDataButton);
-            _getHelloWorldDataButton.Click += GetHelloWorldDataButtonOnClick;
-            _getHelloWorldDataTextView = FindViewById<TextView>(Resource.Id.getHelloWorldDataTextView);
+            //_getHelloWorldDataButton = FindViewById<Button>(Resource.Id.getHelloWorldDataButton);
+            //_getHelloWorldDataButton.Click += GetHelloWorldDataButtonOnClick;
+            //_getHelloWorldDataTextView = FindViewById<TextView>(Resource.Id.getHelloWorldDataTextView);
 
 
 
             // This button will invoke SayHelloWorld - this method takes a simple string as a parameter.
-            _sayHelloWorldButton = FindViewById<Button>(Resource.Id.sayHelloWorldButton);
-            _sayHelloWorldButton.Click += SayHelloWorldButtonOnClick;
-            _sayHelloWorldTextView = FindViewById<TextView>(Resource.Id.sayHelloWorldTextView);
+            //_sayHelloWorldButton = FindViewById<Button>(Resource.Id.sayHelloWorldButton);
+            //_sayHelloWorldButton.Click += SayHelloWorldButtonOnClick;
+            //_sayHelloWorldTextView = FindViewById<TextView>(Resource.Id.sayHelloWorldTextView);
         
 
     }
