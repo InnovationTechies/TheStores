@@ -20,9 +20,7 @@ namespace EcompassApp
         TextView _sayHelloWorldTextView;
         TextView _getHelloWorldDataTextView;
 
-
         private Button btnLogin;
-        
 
         private EditText txtUsername;
         private EditText txtPassword;
