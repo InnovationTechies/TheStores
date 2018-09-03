@@ -72,10 +72,13 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity1.cs" />
+    <Compile Include="HomeActivity.cs" />
+    <Compile Include="LocationActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MainActivityHome.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecialActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

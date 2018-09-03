@@ -12,14 +12,14 @@ using Android.Widget;
 
 namespace EcompassApp
 {
-    [Activity(Label = "Activity1")]
-    public class Activity1 : Activity
+    [Activity(Label = "SpecialActivity")]
+    public class SpecialActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.activity_home);
+            SetContentView(Resource.Layout.activity_specials);
         }
     }
 }
