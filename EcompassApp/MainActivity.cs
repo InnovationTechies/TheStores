@@ -93,40 +93,42 @@ namespace EcompassApp
         }
 
 
-        async void GetHelloWorldDataButtonOnClick(object sender, EventArgs e)
-        {
-            var data = new List<PnpProducts>
-            {
-                //Name = "Mr. Chad",
-                //SayHello = true
-            };
+        //async void GetHelloWorldDataButtonOnClick(object sender, EventArgs e)
+        //{
+        //    var data = new List<PnpProducts>
+        //    {
+        //        //Name = "Mr. Chad",
+        //        //SayHello = true
+        //    };
 
-            _getHelloWorldDataTextView.Text = "Waiting for WCF...";
-            List<PnpProducts> result;
-            try
-            {
-                //result = await _client.GetProductsData();
-                //_getHelloWorldDataTextView.Text = result;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
+        //    _getHelloWorldDataTextView.Text = "Waiting for WCF...";
+        //    List<PnpProducts> result;
+        //    try
+        //    {
+        //        //result = await _client.GetProductsData();
+        //        //_getHelloWorldDataTextView.Text = result;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //    }
+        //}
 
-        async void SayHelloWorldButtonOnClick(object sender, EventArgs e)
-        {
-            _sayHelloWorldTextView.Text = "Waiting for WCF...";
-            try
-            {
-                //var result = await _client.("Kilroy");
-                //_sayHelloWorldTextView.Text = result;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
+        //async void SayHelloWorldButtonOnClick(object sender, EventArgs e)
+        //{
+        //    _sayHelloWorldTextView.Text = "Waiting for WCF...";
+        //    try
+        //    {
+        //        //var result = await _client.("Kilroy");
+        //        //_sayHelloWorldTextView.Text = result;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //    }
+        //}
+
+
 
     }
 }
