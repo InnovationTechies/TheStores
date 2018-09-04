@@ -29,7 +29,9 @@
 		android:layout_marginLeft="20dp"
 		android:layout_marginRight="20dp"
 		android:textColor="@android:color/white"
-		android:textStyle="bold" />
+		android:textStyle="bold"
+		android:clickable="true"
+		android:onClick="btnLocation_Click" />
 	<Button
 		android:text="SPECIALS"
 		android:layout_width="match_parent"

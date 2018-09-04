@@ -20,6 +20,17 @@ namespace EcompassApp
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.activity_home);
+
         }
+
+        private void btnLocation_Click(object sender, System.EventArgs e)
+        {
+            StartActivity(typeof(LocationActivity));
+        }
+
     }
+
+   
+
+
 }
