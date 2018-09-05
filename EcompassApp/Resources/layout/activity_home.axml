@@ -16,7 +16,7 @@
         <ImageView
             android:src="@drawable/e_compass"
             android:layout_width="match_parent"
-            android:layout_height="273.0dp"
+            android:layout_height="231.5dp"
             android:id="@+id/imageView1"
             android:layout_marginBottom="182.0dp" />
     </LinearLayout>
