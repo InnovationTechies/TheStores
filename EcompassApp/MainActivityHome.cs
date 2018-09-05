@@ -21,6 +21,8 @@ namespace EcompassApp
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.activity_home);
 
             // Create your application here
             btnLocation = FindViewById<Button>(Resource.Id.btnLocation);
