@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using ServiceProxy.EcompassServiceProxy;
 using System.ServiceModel;
+using Android.Content;
 
 namespace EcompassApp
 {
@@ -40,7 +41,7 @@ namespace EcompassApp
 
 
             //InitializeEcompassServiceClient();
-
+            //StartActivity();
             // This button will invoke the GetHelloWorldData - the method that takes a C# object as a parameter.
             //_getHelloWorldDataButton = FindViewById<Button>(Resource.Id.getHelloWorldDataButton);
             //_getHelloWorldDataButton.Click += GetHelloWorldDataButtonOnClick;
@@ -52,9 +53,12 @@ namespace EcompassApp
             //_sayHelloWorldButton = FindViewById<Button>(Resource.Id.sayHelloWorldButton);
             //_sayHelloWorldButton.Click += SayHelloWorldButtonOnClick;
             //_sayHelloWorldTextView = FindViewById<TextView>(Resource.Id.sayHelloWorldTextView);
-        
 
-    }
+
+        }
+
+
+        
 
         void InitializeEcompassServiceClient()
         {
@@ -83,7 +87,7 @@ namespace EcompassApp
         {
             if (txtUsername.Text == "software" && txtPassword.Text == "dev")
             {
-                StartActivity(typeof(HomeActivity));
+                StartActivity(typeof(MainActivity));
 
             }
             else

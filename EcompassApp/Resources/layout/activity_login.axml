@@ -4,7 +4,8 @@
 	android:orientation="vertical"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="#ff388e3c">
+	android:background="#ff388e3c"
+	android:focusable="auto">
 	<LinearLayout
 		android:orientation="vertical"
 		android:minWidth="25px"
