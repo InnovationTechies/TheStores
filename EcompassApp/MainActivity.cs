@@ -12,13 +12,13 @@ namespace EcompassApp
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        static readonly EndpointAddress Endpoint = new EndpointAddress("http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/");
+        //static readonly EndpointAddress Endpoint = new EndpointAddress("http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/");
 
-        EcompassServiceClient _client;
-        Button _getHelloWorldDataButton;
-        Button _sayHelloWorldButton;
-        TextView _sayHelloWorldTextView;
-        TextView _getHelloWorldDataTextView;
+        //EcompassServiceClient _client;
+        //Button _getHelloWorldDataButton;
+        //Button _sayHelloWorldButton;
+        //TextView _sayHelloWorldTextView;
+        //TextView _getHelloWorldDataTextView;
 
         private Button btnLogin;
 
@@ -59,7 +59,7 @@ namespace EcompassApp
         void InitializeEcompassServiceClient()
         {
             BasicHttpBinding binding = CreateBasicHttpBinding();
-            _client = new EcompassServiceClient(binding, Endpoint);
+           // _client = new EcompassServiceClient(binding, Endpoint);
         }
 
 
