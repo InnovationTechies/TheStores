@@ -6,19 +6,20 @@ using System;
 using System.Collections.Generic;
 using ServiceProxy.EcompassServiceProxy;
 using System.ServiceModel;
+using Android.Content;
 
 namespace EcompassApp
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        static readonly EndpointAddress Endpoint = new EndpointAddress("http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/");
+        //static readonly EndpointAddress Endpoint = new EndpointAddress("http://localhost:8733/Design_Time_Addresses/StoresService/EcompassService/");
 
-        EcompassServiceClient _client;
-        Button _getHelloWorldDataButton;
-        Button _sayHelloWorldButton;
-        TextView _sayHelloWorldTextView;
-        TextView _getHelloWorldDataTextView;
+        //EcompassServiceClient _client;
+        //Button _getHelloWorldDataButton;
+        //Button _sayHelloWorldButton;
+        //TextView _sayHelloWorldTextView;
+        //TextView _getHelloWorldDataTextView;
 
         private Button btnLogin;
 
@@ -40,7 +41,7 @@ namespace EcompassApp
 
 
             //InitializeEcompassServiceClient();
-
+            //StartActivity();
             // This button will invoke the GetHelloWorldData - the method that takes a C# object as a parameter.
             //_getHelloWorldDataButton = FindViewById<Button>(Resource.Id.getHelloWorldDataButton);
             //_getHelloWorldDataButton.Click += GetHelloWorldDataButtonOnClick;
@@ -52,14 +53,17 @@ namespace EcompassApp
             //_sayHelloWorldButton = FindViewById<Button>(Resource.Id.sayHelloWorldButton);
             //_sayHelloWorldButton.Click += SayHelloWorldButtonOnClick;
             //_sayHelloWorldTextView = FindViewById<TextView>(Resource.Id.sayHelloWorldTextView);
-        
 
-    }
+
+        }
+
+
+        
 
         void InitializeEcompassServiceClient()
         {
             BasicHttpBinding binding = CreateBasicHttpBinding();
-            _client = new EcompassServiceClient(binding, Endpoint);
+           // _client = new EcompassServiceClient(binding, Endpoint);
         }
 
 

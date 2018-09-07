@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace EcompassApp
 {
-    [Activity(Label = "Activity1")]
+    [Activity(Label = "HomeActivity")]
     public class HomeActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
