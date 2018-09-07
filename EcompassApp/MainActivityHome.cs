@@ -31,12 +31,12 @@ namespace EcompassApp
             btnSpecials.Click += btnSpecials_Click;
         }
 
-        private void btnSpecials_Click(object sender, EventArgs e)
+        private void btnSpecials_Click(object sender, System.EventArgs e)
         {
             StartActivity(typeof(SpecialActivity));
         }
 
-        private void btnLocation_Click(object sender, EventArgs e)
+        private void btnLocation_Click(object sender, System.EventArgs e)
         {
             StartActivity(typeof(LocationActivity));
         }
