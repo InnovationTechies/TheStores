@@ -87,7 +87,7 @@ namespace EcompassApp
         {
             if (txtUsername.Text == "software" && txtPassword.Text == "dev")
             {
-                StartActivity(typeof(MainActivity));
+                StartActivity(typeof(HomeActivity));
 
             }
             else
