@@ -17,7 +17,7 @@ namespace StoresService
 
         [DataMember]
         public string Name { get; set; }
-
+            
         public HelloWorldData()
         {
             Name = "Hello ";
